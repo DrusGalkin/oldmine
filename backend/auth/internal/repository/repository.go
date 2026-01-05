@@ -1,0 +1,40 @@
+package repository
+
+import (
+	"auth/internal/models"
+	"context"
+	"database/sql"
+	"errors"
+	"fmt"
+	"go.uber.org/zap"
+	"time"
+)
+
+type Repository interface {
+	Create(user models.User) error
+	GetUser(email, password string) (models.UserDTO, error)
+}
+
+type AuthRepository struct {
+	db  *sql.DB
+	log *zap.Logger
+	ttl time.Duration
+}
+
+func New(db *sql.DB, log *zap.Logger, ttl time.Duration) Repository {
+	return AuthRepository{
+		db:  db,
+		log: log,
+		ttl: ttl,
+	}
+}
+
+func (r AuthRepository) getContext() (context.Context, context.CancelFunc) {
+	return context.WithTimeout(context.Background(), r.ttl)
+}
+
+func queryError(log *zap.Logger, op string, err error) error {
+	msg := fmt.Sprintf("%s: %s", op, err.Error())
+	log.Error(msg)
+	return errors.New(msg)
+}

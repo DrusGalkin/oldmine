@@ -1,0 +1,5 @@
+http:
+  port: 8123
+  timeout:  3m
+  sess_ttl: 30m
+  absolute_sess_ttl: 24h
