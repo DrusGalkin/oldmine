@@ -1,6 +1,7 @@
 package http
 
 import (
+	"auth/internal/config"
 	"auth/internal/repository"
 	"auth/internal/transport/http/handler"
 	"auth/internal/transport/http/middleware"
@@ -19,15 +20,15 @@ import (
 
 const COOKIE_NAME_SESSION = "session_id"
 
-func SetupRouters(app *fiber.App, repo repository.Repository, rdb *database.RedisClient, ttl time.Duration) *fiber.App {
+func SetupRouters(app *fiber.App, repo repository.Repository, rdb *database.RedisClient, cfg *config.Config) *fiber.App {
 	hd := handler.New(repo)
 
 	sessCfg := session.Config{
 		Storage:         rdb,
 		CookieDomain:    COOKIE_NAME_SESSION,
 		Extractor:       extractors.Extractor{},
-		IdleTimeout:     ttl,
-		AbsoluteTimeout: 24 * time.Hour,
+		IdleTimeout:     cfg.ServerConfig.SessTTl,
+		AbsoluteTimeout: cfg.ServerConfig.AbsoluteSessTTl,
 		CookieSecure:    true,
 		CookieHTTPOnly:  true,
 		KeyGenerator: func() string {

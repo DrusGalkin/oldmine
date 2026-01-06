@@ -7,27 +7,19 @@ import (
 	"errors"
 	"fmt"
 	"google.golang.org/grpc/codes"
-	grpcLogger "libs/logger/grpc-logger"
+	glogger "libs/logger/grpc-logger"
 	"libs/proto/generate"
 )
 
-type SessionData struct {
-	ID    int
-	Name  string
-	Email string
-	Auth  bool
-}
-
 func (s *Server) CheckAuth(ctx context.Context, req *generate.AuthRequest) (*generate.AuthResponse, error) {
 	const op = "grpc.CheckAuth"
-
 	data, err := s.redis.GetWithContext(ctx, req.SessId)
 	if err != nil {
-		return nil, grpcLogger.PrintError(op, codes.Internal, errors.New("Redis error: "+err.Error()))
+		return nil, glogger.PrintError(op, codes.Internal, errors.New("Redis error: "+err.Error()))
 	}
 
 	if len(data) == 0 {
-		return nil, grpcLogger.PrintError(op, codes.NotFound, errors.New("Сессия не найдена"))
+		return nil, glogger.PrintError(op, codes.NotFound, errors.New("Сессия не найдена"))
 	}
 
 	var sessionData map[interface{}]interface{}
@@ -39,12 +31,12 @@ func (s *Server) CheckAuth(ctx context.Context, req *generate.AuthRequest) (*gen
 	id, _ := sessionData["id"].(int)
 	name, _ := sessionData["name"].(string)
 	email, _ := sessionData["email"].(string)
-	//auth, _ := sessionData["auth"].(bool)
+	auth, _ := sessionData["auth"].(bool)
 
 	return &generate.AuthResponse{
 		Id:    int64(id),
 		Name:  name,
 		Email: email,
-		//Auth:  auth,
-	}, grpcLogger.Print(op, codes.OK)
+		Auth:  auth,
+	}, glogger.Print(op, codes.OK)
 }

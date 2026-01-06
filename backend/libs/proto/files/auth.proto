@@ -14,4 +14,5 @@ message AuthResponse {
   int64 id = 1;
   string name = 2;
   string email = 3;
+  bool auth = 4;
 }

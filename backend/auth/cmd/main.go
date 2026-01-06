@@ -2,43 +2,64 @@ package main
 
 import (
 	"auth/internal/app"
+	"auth/internal/config"
 	"auth/internal/transport/grpc"
 	"auth/pkg/database"
 	"fmt"
 	"libs"
 	"os"
-	"os/signal"
-	"syscall"
 	"time"
 )
 
 func main() {
+	cfg := config.MustLoadConfig()
+
 	pg := database.PostgresInit()
 	rdb := database.RedisInit()
 
+	// ENV указывать в докере
 	log := libs.LoggerInit(os.Getenv("ENV"))
 	defer log.Sync()
 
-	go app.HTTPLoad(
+	// HTTP и gRPC
+	/* ********************************************** */
+
+	httpApp := app.HTTPLoad(
 		pg,
 		rdb,
 		log,
-		4*time.Hour,
-	).Listen(":8123")
+		cfg,
+	)
+	go httpApp.Listen(":" + cfg.ServerConfig.Port)
 
-	go grpc.New(
+	grpcApp := grpc.New(
 		rdb,
-		"localhost",
-		"50051",
-		2000,
-	).Run()
+		cfg.GRPCConfig.Host,
+		cfg.GRPCConfig.Port,
+	)
+	go grpcApp.Run()
 
-	sigs := make(chan os.Signal, 1)
-	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM, syscall.SIGKILL, syscall.SIGHUP)
+	/* ********************************************** */
 
-	select {
-	case <-sigs:
+	libs.GracefulShutdown(func() {
 		fmt.Println("Завершение работы Auth сервиса")
-	}
+
+		if err := httpApp.ShutdownWithTimeout(cfg.ServerConfig.ShutdownTimeout); err != nil {
+			log.Error("Ошибка завершения работы HTTP сервера" + err.Error())
+		}
+
+		grpcApp.Stop()
+
+		if err := pg.Close(); err != nil {
+			log.Error("Ошибка завершения работы PostgreSQL сервера" + err.Error())
+		}
+
+		if err := rdb.Close(); err != nil {
+			log.Error("Ошибка завершения работы Redis сервера" + err.Error())
+		}
+
+		time.Sleep(1 * time.Second)
+		fmt.Println("OK!")
+	})
 
 }

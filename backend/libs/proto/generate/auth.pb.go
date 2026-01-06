@@ -70,6 +70,7 @@ type AuthResponse struct {
 	Id            int64                  `protobuf:"varint,1,opt,name=id,proto3" json:"id,omitempty"`
 	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
 	Email         string                 `protobuf:"bytes,3,opt,name=email,proto3" json:"email,omitempty"`
+	Auth          bool                   `protobuf:"varint,4,opt,name=auth,proto3" json:"auth,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -125,6 +126,13 @@ func (x *AuthResponse) GetEmail() string {
 	return ""
 }
 
+func (x *AuthResponse) GetAuth() bool {
+	if x != nil {
+		return x.Auth
+	}
+	return false
+}
+
 var File_auth_proto protoreflect.FileDescriptor
 
 const file_auth_proto_rawDesc = "" +
@@ -132,11 +140,12 @@ const file_auth_proto_rawDesc = "" +
 	"\n" +
 	"auth.proto\"&\n" +
 	"\vAuthRequest\x12\x17\n" +
-	"\asess_id\x18\x01 \x01(\tR\x06sessId\"H\n" +
+	"\asess_id\x18\x01 \x01(\tR\x06sessId\"\\\n" +
 	"\fAuthResponse\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x03R\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x14\n" +
-	"\x05email\x18\x03 \x01(\tR\x05email20\n" +
+	"\x05email\x18\x03 \x01(\tR\x05email\x12\x12\n" +
+	"\x04auth\x18\x04 \x01(\bR\x04auth20\n" +
 	"\x04Auth\x12(\n" +
 	"\tCheckAuth\x12\f.AuthRequest\x1a\r.AuthResponseB\rZ\v../generateb\x06proto3"
 

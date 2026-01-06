@@ -7,21 +7,19 @@ import (
 	glogger "libs/logger/grpc-logger"
 	"libs/proto/generate"
 	"net"
-	"time"
 )
 
 type Server struct {
 	generate.UnimplementedAuthServer
-	ttl   time.Duration
 	redis *database.RedisClient
+	grpc  *grpc.Server
 	host  string
 	port  string
 }
 
-func New(rdb *database.RedisClient, host, port string, ttl time.Duration) *Server {
+func New(rdb *database.RedisClient, host, port string) *Server {
 	return &Server{
 		redis: rdb,
-		ttl:   ttl,
 		host:  host,
 		port:  port,
 	}
@@ -39,11 +37,16 @@ func (s *Server) Run() {
 	generate.RegisterAuthServer(grpcServer, s)
 
 	glogger.PrintStart(s.host, s.port)
+	s.grpc = grpcServer
 
 	err = grpcServer.Serve(lis)
 	if err != nil {
 		panic("Ошибка запуска gRPC сервера: " + err.Error())
 	}
+}
+
+func (s *Server) Stop() {
+	s.grpc.GracefulStop()
 }
 
 func recoveryRun(server *Server) {
