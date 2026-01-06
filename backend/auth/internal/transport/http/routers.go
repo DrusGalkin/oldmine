@@ -14,6 +14,7 @@ import (
 	"github.com/gofiber/fiber/v3/middleware/encryptcookie"
 	"github.com/gofiber/fiber/v3/middleware/logger"
 	"github.com/gofiber/fiber/v3/middleware/session"
+	"github.com/gofiber/swagger/v2"
 	"os"
 	"time"
 )
@@ -50,6 +51,7 @@ func SetupRouters(app *fiber.App, repo repository.Repository, rdb *database.Redi
 		),
 	)
 
+	app.Get("/swagger/*", swagger.HandlerDefault)
 	app.Post("/login", hd.Login)
 	app.Post("/register", hd.Register)
 	app.Get("/logout", hd.Logout)

@@ -11,6 +11,15 @@ import (
 	"time"
 )
 
+// @title OldMine Auth Api
+// @version 1.0
+// @description Документация запросов микросервиса Auth
+// @termsOfService http://swagger.io/terms/
+// @contact.name API Support
+// @contact.email fiber@swagger.io
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+// @host localhost:8123
 func main() {
 	cfg := config.MustLoadConfig()
 
