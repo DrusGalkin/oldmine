@@ -9,12 +9,12 @@ import (
 )
 
 type Config struct {
-	ServerConfig ServerConfig `yaml:"server"`
+	ServerConfig ServerConfig `yaml:"http"`
 	GRPCConfig   GRPCConfig   `yaml:"grpc"`
 }
 
 type ServerConfig struct {
-	Port            string        `yaml:"port"`
+	Port            int           `yaml:"port"`
 	Timeout         time.Duration `yaml:"timeout"`
 	SessTTl         time.Duration `yaml:"sess_ttl"`
 	AbsoluteSessTTl time.Duration `yaml:"absolute_sess_ttl"`
@@ -49,7 +49,7 @@ func getDefaultConfig() *Config {
 	log.Println("\n\n\n\nИспользуется дефолтный кофиг, установите корректный путь до yaml/.env файла\n\n\n\n")
 	return &Config{
 		ServerConfig: ServerConfig{
-			Port:            "8080",
+			Port:            8080,
 			Timeout:         2 * time.Minute,
 			SessTTl:         30 * time.Minute,
 			AbsoluteSessTTl: 24 * time.Hour,

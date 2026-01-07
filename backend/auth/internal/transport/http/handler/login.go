@@ -5,6 +5,17 @@ import (
 	"github.com/gofiber/fiber/v3/middleware/session"
 )
 
+// Login godoc
+// @Summary      Вход в аккаунт
+// @Description  Введите логин и пароль
+// @Tags 		 Auth
+// @Accept       json
+// @Produce      json
+// @Param credential body dto.LoginRequest true "Login credentials"
+// @Success      200  {object}  dto.User
+// @Success		 400  {object}  dto.ErrorResponse
+// @Success		 500  {object}  dto.ErrorResponse
+// @Router       /login [post]
 func (h *AuthHandler) Login(c fiber.Ctx) error {
 	var req struct {
 		Email    string `json:"email"`
@@ -32,10 +43,11 @@ func (h *AuthHandler) Login(c fiber.Ctx) error {
 		})
 	}
 
-	sess.Set("auth", true)
 	sess.Set("id", user.ID)
 	sess.Set("name", user.Name)
 	sess.Set("email", user.Email)
+	sess.Set("created_at", user.CreatedAt)
+	sess.Set("auth", true)
 
 	return c.JSON(fiber.Map{
 		"session_id": sess.ID(),

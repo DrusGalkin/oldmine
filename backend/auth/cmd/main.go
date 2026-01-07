@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "auth/docs"
 	"auth/internal/app"
 	"auth/internal/config"
 	"auth/internal/transport/grpc"
@@ -11,15 +12,15 @@ import (
 	"time"
 )
 
-// @title OldMine Auth Api
+// @title OldMine Auth Api by AndrewGalkin
 // @version 1.0
-// @description Документация запросов микросервиса Auth
-// @termsOfService http://swagger.io/terms/
-// @contact.name API Support
-// @contact.email fiber@swagger.io
-// @license.name Apache 2.0
-// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
-// @host localhost:8123
+// @description Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05
+// @contact.name Почта
+// @contact.email drus.galkin@mail.ru
+// @securityDefinitions.apikey CookieAuth
+// @in cookie
+// @name session_id
+// @description Session authentication with cookie
 func main() {
 	cfg := config.MustLoadConfig()
 
@@ -39,7 +40,7 @@ func main() {
 		log,
 		cfg,
 	)
-	go httpApp.Listen(":" + cfg.ServerConfig.Port)
+	go httpApp.Listen(fmt.Sprintf(":%d", cfg.ServerConfig.Port))
 
 	grpcApp := grpc.New(
 		rdb,

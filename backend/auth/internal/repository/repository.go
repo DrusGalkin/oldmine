@@ -1,6 +1,7 @@
 package repository
 
 import (
+	"auth/internal/dto"
 	"auth/internal/models"
 	"context"
 	"database/sql"
@@ -12,7 +13,7 @@ import (
 
 type Repository interface {
 	Create(user models.User) error
-	GetUser(email, password string) (models.UserDTO, error)
+	GetUser(email, password string) (dto.User, error)
 }
 
 type AuthRepository struct {

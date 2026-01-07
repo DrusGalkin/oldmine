@@ -1,13 +1,14 @@
 package repository
 
 import (
+	"auth/internal/dto"
 	"auth/internal/models"
 	"errors"
 	"go.uber.org/zap"
 	"libs"
 )
 
-func (r AuthRepository) GetUser(email, password string) (models.UserDTO, error) {
+func (r AuthRepository) GetUser(email, password string) (dto.User, error) {
 	const op = "repository.GetUser"
 	log := r.log.With(zap.String("method", op))
 
@@ -27,14 +28,14 @@ func (r AuthRepository) GetUser(email, password string) (models.UserDTO, error) 
 		&user.Password,
 		&user.CreatedAt,
 	); err != nil {
-		return models.UserDTO{}, queryError(log, op, err)
+		return dto.User{}, queryError(log, op, err)
 	}
 
 	if !libs.CheckPass(user.Password, password) {
-		return models.UserDTO{}, queryError(log, op, errors.New("Невалидные данные"))
+		return dto.User{}, queryError(log, op, errors.New("Невалидные данные"))
 	}
 
-	return models.UserDTO{
+	return dto.User{
 		ID:        user.ID,
 		Name:      user.Name,
 		Email:     user.Email,

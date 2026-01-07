@@ -55,7 +55,6 @@ func SetupRouters(app *fiber.App, repo repository.Repository, rdb *database.Redi
 	app.Post("/login", hd.Login)
 	app.Post("/register", hd.Register)
 	app.Get("/logout", hd.Logout)
-	app.Get("/logout", hd.Profile)
 
 	auth := app.Use(middleware.AuthMiddleware())
 	{
