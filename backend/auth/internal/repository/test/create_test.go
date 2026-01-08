@@ -3,6 +3,7 @@ package test
 import (
 	"auth/internal/models"
 	"auth/internal/repository"
+	"fmt"
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -49,22 +50,37 @@ func TestAuthRepository_Create(t *testing.T) {
 		...
 	*/
 	t.Run("Неправильное создание пользователя", func(t *testing.T) {
-		log, _ := zap.NewDevelopment()
 
-		tUser := models.User{
-			Name:     "OK",
-			Email:    "expmail.com",
-			Password: "1",
+		testingUsers := []models.User{
+			{
+				Name:     "",
+				Email:    "expmai@m",
+				Password: "133",
+			},
+			{
+				Name:     "And",
+				Email:    "@d.com",
+				Password: "+_1",
+			},
+			{
+				Name:     "OK",
+				Email:    "expmail.com",
+				Password: "1",
+			},
 		}
 
-		db, _, err := sqlmock.New()
-		require.NoError(t, err)
-		defer db.Close()
+		for i, tableCase := range testingUsers {
+			t.Run(fmt.Sprintf("Тест %d", i+1), func(t *testing.T) {
+				db, _, err := sqlmock.New()
+				require.NoError(t, err, "error opening mock db")
+				defer db.Close()
 
-		repo := repository.New(db, log, 2*time.Second)
-		err = repo.Create(tUser)
+				repo := repository.New(db, log, 2*time.Second)
 
-		assert.Error(t, err)
-		assert.Contains(t, err.Error(), "Невалидные аргументы")
+				err = repo.Create(tableCase)
+				assert.Error(t, err)
+				assert.Contains(t, err.Error(), "Невалидные аргументы")
+			})
+		}
 	})
 }

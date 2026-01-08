@@ -5,7 +5,6 @@ import (
 	"auth/internal/models"
 	"context"
 	"database/sql"
-	"errors"
 	"fmt"
 	"go.uber.org/zap"
 	"time"
@@ -37,5 +36,5 @@ func (r AuthRepository) getContext() (context.Context, context.CancelFunc) {
 func queryError(log *zap.Logger, op string, err error) error {
 	msg := fmt.Sprintf("%s: %s", op, err.Error())
 	log.Error(msg)
-	return errors.New(msg)
+	return err
 }
