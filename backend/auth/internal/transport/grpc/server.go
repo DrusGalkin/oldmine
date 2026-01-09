@@ -1,8 +1,8 @@
 package grpc
 
 import (
-	"auth/pkg/database"
 	"fmt"
+	"github.com/gofiber/fiber/v3"
 	"google.golang.org/grpc"
 	glogger "libs/logger/grpc-logger"
 	"libs/proto/generate"
@@ -11,13 +11,13 @@ import (
 
 type Server struct {
 	generate.UnimplementedAuthServer
-	redis *database.RedisClient
+	redis fiber.Storage
 	grpc  *grpc.Server
 	host  string
 	port  string
 }
 
-func New(rdb *database.RedisClient, host, port string) *Server {
+func New(rdb fiber.Storage, host, port string) *Server {
 	return &Server{
 		redis: rdb,
 		host:  host,

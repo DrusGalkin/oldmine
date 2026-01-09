@@ -22,6 +22,10 @@ type AuthRepository struct {
 }
 
 func New(db *sql.DB, log *zap.Logger, ttl time.Duration) Repository {
+	if ttl == 0 {
+		ttl = 10 * time.Second
+	}
+
 	return AuthRepository{
 		db:  db,
 		log: log,
