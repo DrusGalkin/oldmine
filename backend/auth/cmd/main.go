@@ -34,7 +34,7 @@ func main() {
 	// HTTP и gRPC
 	/* ********************************************** */
 
-	httpApp := app.HTTPLoad(
+	httpApp, repo := app.HTTPLoad(
 		pg,
 		rdb,
 		log,
@@ -44,6 +44,7 @@ func main() {
 
 	grpcApp := grpc.New(
 		rdb,
+		repo,
 		cfg.GRPCConfig.Host,
 		cfg.GRPCConfig.Port,
 	)

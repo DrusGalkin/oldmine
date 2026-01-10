@@ -64,7 +64,6 @@ func TestCheckAuth_Client(t *testing.T) {
 		defer conn.Close()
 
 		client := generate.NewAuthClient(conn)
-
 		req := &generate.AuthRequest{
 			SessId: sessID,
 		}

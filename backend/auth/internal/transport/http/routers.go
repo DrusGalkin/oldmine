@@ -2,10 +2,8 @@ package http
 
 import (
 	"auth/internal/config"
-	"auth/internal/repository"
 	"auth/internal/transport/http/handler"
 	"auth/internal/transport/http/middleware"
-	"auth/pkg/database"
 	"encoding/base64"
 	"fmt"
 	"github.com/gofiber/fiber/v3"
@@ -21,9 +19,7 @@ import (
 
 const COOKIE_NAME_SESSION = "session_id"
 
-func SetupRouters(app *fiber.App, repo repository.Repository, rdb *database.RedisClient, cfg *config.Config) *fiber.App {
-	hd := handler.New(repo)
-
+func SetupRouters(app *fiber.App, hd handler.Handler, rdb fiber.Storage, cfg *config.Config) *fiber.App {
 	sessCfg := session.Config{
 		Storage:         rdb,
 		CookieDomain:    COOKIE_NAME_SESSION,

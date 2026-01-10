@@ -13,6 +13,8 @@ import (
 type Repository interface {
 	Create(user models.User) error
 	GetUser(email, password string) (dto.User, error)
+	IsAdmin(ctx context.Context, reqID int64) (bool, error)
+	PaymentVerification(ctx context.Context, reqID int64) (bool, error)
 }
 
 type AuthRepository struct {

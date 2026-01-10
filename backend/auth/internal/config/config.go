@@ -29,12 +29,12 @@ type GRPCConfig struct {
 
 func MustLoadConfig() *Config {
 	if err := godotenv.Load(".env"); err != nil {
-		return getDefaultConfig()
+		return GetDefaultConfig()
 	}
 
 	path := os.Getenv("PATH_CONFIG")
 	if len(path) == 0 {
-		return getDefaultConfig()
+		return GetDefaultConfig()
 	}
 
 	var config Config
@@ -45,7 +45,7 @@ func MustLoadConfig() *Config {
 	return &config
 }
 
-func getDefaultConfig() *Config {
+func GetDefaultConfig() *Config {
 	log.Println("\n\n\n\nИспользуется дефолтный кофиг, установите корректный путь до yaml/.env файла\n\n\n\n")
 	return &Config{
 		ServerConfig: ServerConfig{
