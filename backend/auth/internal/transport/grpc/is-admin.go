@@ -53,5 +53,5 @@ func (s *Server) IsAdmin(
 
 	return &generate.IsAdminResponse{
 		IsAdmin: <-boolCh,
-	}, nil
+	}, glogger.Print(op, codes.OK)
 }

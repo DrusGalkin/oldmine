@@ -5,9 +5,17 @@ type LoginRequest struct {
 	Password string `json:"password"`
 }
 
+type TrueLogResponse struct {
+	ID      int
+	Name    string
+	Email   string
+	Admin   bool
+	Payment bool
+}
+
 type LoginResponse struct {
 	SessID string `json:"sessID"`
-	User   User   `json:"user"`
+	User   TrueLogResponse
 }
 
 type ErrorResponse struct {

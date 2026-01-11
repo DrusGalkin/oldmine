@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"auth/internal/dto"
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/middleware/session"
 )
@@ -43,18 +44,25 @@ func (h *AuthHandler) Login(c fiber.Ctx) error {
 		})
 	}
 
+	admin, _ := h.repo.IsAdmin(c.Context(), int64(user.ID))
+	ver, _ := h.repo.PaymentVerification(c.Context(), int64(user.ID))
+
 	sess.Set("id", user.ID)
 	sess.Set("name", user.Name)
 	sess.Set("email", user.Email)
 	sess.Set("created_at", user.CreatedAt)
 	sess.Set("auth", true)
+	sess.Set("pay", ver)
+	sess.Set("admin", admin)
 
 	return c.JSON(fiber.Map{
 		"session_id": sess.ID(),
-		"user": fiber.Map{
-			"id":    user.ID,
-			"name":  user.Name,
-			"email": user.Email,
+		"user": dto.TrueLogResponse{
+			ID:      user.ID,
+			Name:    user.Name,
+			Email:   user.Email,
+			Admin:   admin,
+			Payment: ver,
 		},
 	})
 }

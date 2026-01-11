@@ -54,5 +54,5 @@ func (s *Server) PaymentVerification(
 
 	return &generate.PaymentVerificationResponse{
 		Pay: <-boolCh,
-	}, nil
+	}, glogger.Print(op, codes.OK)
 }

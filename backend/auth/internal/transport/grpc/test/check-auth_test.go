@@ -20,7 +20,12 @@ func TestCheckAuth_Client(t *testing.T) {
 
 	chErr := make(chan error, 1)
 	host, port := "localhost", "50051"
-	grpcServer := mgrpc.New(rdb, host, port)
+	grpcServer := mgrpc.New(
+		rdb,
+		nil,
+		host,
+		port,
+	)
 
 	sessionData := map[interface{}]interface{}{
 		"id":    1,

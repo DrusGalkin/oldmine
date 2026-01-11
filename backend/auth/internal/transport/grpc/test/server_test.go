@@ -10,6 +10,7 @@ import (
 func TestGRPCServer(t *testing.T) {
 	grpcSever := grpc.New(
 		new(mock.Redis),
+		nil,
 		"localhost",
 		"",
 	)
