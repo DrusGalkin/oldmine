@@ -1,0 +1,6 @@
+http:
+  port: 8122
+  timeout:  3m
+grpc:
+  host: "localhost"
+  port: 50052

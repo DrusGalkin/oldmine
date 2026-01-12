@@ -1,14 +1,17 @@
 package main
 
 import (
-	"github.com/gofiber/fiber/v3"
-	"github.com/gofiber/fiber/v3/middleware/static"
+	"libs"
+	"skin_system/internal/config"
+	"skin_system/pkg"
 )
 
+const UPLOAD_PATH = "./uploads"
+
 func main() {
-	app := fiber.New()
+	pkg.MustLoadMkDir(UPLOAD_PATH)
 
-	app.Get("/*", static.New("./uploads"))
+	cfg := config.MustLoad()
+	log := libs.LoggerInit(cfg.Env)
 
-	app.Listen(":8124")
 }

@@ -10,10 +10,9 @@ func (r *SkinRepository) Get(ctx context.Context, id int) (string, error) {
 	const op = "repository.Get"
 	log := r.log.With(zap.String("method", op))
 
-	query := `select path from skins where id = $1`
+	query := `select path from skins where user_id = $1`
 
 	var path string
-
 	if err := r.db.
 		QueryRowContext(
 			ctx,
