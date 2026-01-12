@@ -20,7 +20,7 @@ func (r AuthRepository) Create(user models.User) error {
 	query := `insert into users(name, email, password, created_at) values ($1, $2, $3, $4) returning id`
 
 	if err := valid.Struct(user); err != nil {
-		return queryError(log, op, errors.New("Невалидные аргументы"))
+		return libs.QueryError(log, op, errors.New("Невалидные аргументы"))
 	}
 
 	var id int64
@@ -34,11 +34,11 @@ func (r AuthRepository) Create(user models.User) error {
 		time.Now(),
 	).Scan(&id)
 	if err != nil {
-		return queryError(log, op, err)
+		return libs.QueryError(log, op, err)
 	}
 
 	if id == 0 {
-		return queryError(log, op, errors.New("Пользователь не создан"))
+		return libs.QueryError(log, op, errors.New("Пользователь не создан"))
 	}
 
 	return nil

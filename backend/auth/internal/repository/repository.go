@@ -5,7 +5,6 @@ import (
 	"auth/internal/models"
 	"context"
 	"database/sql"
-	"fmt"
 	"go.uber.org/zap"
 	"time"
 )
@@ -37,10 +36,4 @@ func New(db *sql.DB, log *zap.Logger, ttl time.Duration) Repository {
 
 func (r AuthRepository) getContext() (context.Context, context.CancelFunc) {
 	return context.WithTimeout(context.Background(), r.ttl)
-}
-
-func queryError(log *zap.Logger, op string, err error) error {
-	msg := fmt.Sprintf("%s: %s", op, err.Error())
-	log.Error(msg)
-	return err
 }

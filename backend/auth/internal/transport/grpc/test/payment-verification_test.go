@@ -56,8 +56,9 @@ func TestPaymentVerification_Client(t *testing.T) {
 			fmt.Sprintf("%s:%s", host, port),
 			grpc.WithTransportCredentials(insecure.NewCredentials()),
 		)
-
 		client := generate.NewAuthClient(conn)
+		defer conn.Close()
+
 		ver, err := client.PaymentVerification(context.Background(), &generate.PaymentVerificationRequest{Id: uid})
 		if err != nil {
 			errCh <- err

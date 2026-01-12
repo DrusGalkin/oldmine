@@ -3,6 +3,7 @@ package repository
 import (
 	"context"
 	"go.uber.org/zap"
+	"libs"
 )
 
 func (r AuthRepository) IsAdmin(ctx context.Context, reqID int64) (bool, error) {
@@ -17,7 +18,7 @@ func (r AuthRepository) IsAdmin(ctx context.Context, reqID int64) (bool, error) 
 		query,
 		reqID,
 	).Scan(&userID); err != nil {
-		return false, queryError(log, op, err)
+		return false, libs.QueryError(log, op, err)
 	}
 
 	return userID == reqID, nil

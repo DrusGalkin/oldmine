@@ -1,6 +1,7 @@
 package libs
 
 import (
+	"fmt"
 	"go.uber.org/zap"
 )
 
@@ -16,4 +17,10 @@ func LoggerInit(env string) *zap.Logger {
 	log.Info("Логгер инициализирован")
 
 	return log
+}
+
+func QueryError(log *zap.Logger, op string, err error) error {
+	msg := fmt.Sprintf("%s: %s", op, err.Error())
+	log.Error(msg)
+	return err
 }

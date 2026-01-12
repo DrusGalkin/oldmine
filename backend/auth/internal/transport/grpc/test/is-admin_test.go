@@ -59,6 +59,7 @@ func TestIsAdmin_Client(t *testing.T) {
 			grpc.WithTransportCredentials(insecure.NewCredentials()),
 		)
 		client := generate.NewAuthClient(conn)
+		defer conn.Close()
 
 		res, err := client.IsAdmin(context.Background(), &generate.IsAdminRequest{Id: uid})
 		if err != nil {
@@ -72,5 +73,8 @@ func TestIsAdmin_Client(t *testing.T) {
 		t.Fatal(err)
 	case res := <-resCh:
 		assert.Equal(t, res, true)
+	default:
+		server.Stop()
+
 	}
 }

@@ -28,11 +28,11 @@ func (r AuthRepository) GetUser(email, password string) (dto.User, error) {
 		&user.Password,
 		&user.CreatedAt,
 	); err != nil {
-		return dto.User{}, queryError(log, op, err)
+		return dto.User{}, libs.QueryError(log, op, err)
 	}
 
 	if !libs.CheckPass(user.Password, password) {
-		return dto.User{}, queryError(log, op, errors.New("Невалидные данные"))
+		return dto.User{}, libs.QueryError(log, op, errors.New("Невалидные данные"))
 	}
 
 	return dto.User{
