@@ -20,8 +20,9 @@ type HTTPConfig struct {
 }
 
 type GRPCConfig struct {
-	Host string `yaml:"host"`
-	Port string `yaml:"port"`
+	Host    string        `yaml:"host"`
+	Port    string        `yaml:"port"`
+	Timeout time.Duration `yaml:"timeout"`
 }
 
 func MustLoad() *Config {

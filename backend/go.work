@@ -4,5 +4,6 @@ use (
 	auth
 	libs
 	skin-system
+	gateway
 )
 

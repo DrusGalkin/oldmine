@@ -4,3 +4,4 @@ http:
 grpc:
   host: "localhost"
   port: 50052
+  timeout: 30s

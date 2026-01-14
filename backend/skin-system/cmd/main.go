@@ -2,6 +2,7 @@ package main
 
 import (
 	"libs"
+	"skin_system/internal/app"
 	"skin_system/internal/config"
 	"skin_system/pkg"
 )
@@ -13,5 +14,7 @@ func main() {
 
 	cfg := config.MustLoad()
 	log := libs.LoggerInit(cfg.Env)
+
+	app.Run()
 
 }
