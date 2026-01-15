@@ -13,5 +13,5 @@ func MustLoadMkDir(path string) {
 }
 
 func getDefaultPath() string {
-	return "/var/lib/skin-system/uploads"
+	return "/var/lib/skins/uploads"
 }

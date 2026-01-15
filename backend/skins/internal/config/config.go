@@ -15,8 +15,9 @@ type Config struct {
 }
 
 type HTTPConfig struct {
-	Port    string        `yaml:"port"`
-	Timeout time.Duration `yaml:"timeout"`
+	Port            string        `yaml:"port"`
+	Timeout         time.Duration `yaml:"timeout"`
+	ShutdownTimeout time.Duration `yaml:"shutdown_timeout"`
 }
 
 type GRPCConfig struct {

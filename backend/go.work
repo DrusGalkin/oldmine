@@ -3,7 +3,7 @@ go 1.25.1
 use (
 	auth
 	libs
-	skin-system
+	./skins
 	gateway
 )
 

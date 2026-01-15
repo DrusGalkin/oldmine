@@ -1,6 +1,7 @@
 http:
   port: 8122
-  timeout:  3m
+  timeout: 3m
+  shutdown_timeout: 10s
 grpc:
   host: "localhost"
   port: 50052
