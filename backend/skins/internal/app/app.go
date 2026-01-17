@@ -4,10 +4,11 @@ import (
 	"database/sql"
 	"github.com/gofiber/fiber/v3"
 	"go.uber.org/zap"
-	"skin_system/internal/config"
-	"skin_system/internal/repository"
-	"skin_system/internal/transport/grpc/client"
-	"skin_system/internal/transport/http"
+	"skins/internal/config"
+	"skins/internal/repository"
+	"skins/internal/transport/grpc/client"
+	"skins/internal/transport/http"
+	"skins/internal/transport/http/handler"
 )
 
 func Run(db *sql.DB, log *zap.Logger, cfg *config.Config) *fiber.App {
@@ -19,6 +20,6 @@ func Run(db *sql.DB, log *zap.Logger, cfg *config.Config) *fiber.App {
 		cfg.GRPC.Timeout,
 	)
 
-	handler := handler.New(repo, grpcClient)
-	return http.SetupRouters()
+	hd := handler.New(repo, grpcClient)
+	return http.SetupRouters(hd, grpcClient, handler.UPLOAD_PATH, cfg)
 }

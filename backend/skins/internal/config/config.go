@@ -49,12 +49,14 @@ func getDefaultConfig() *Config {
 
 	return &Config{
 		HTTP: HTTPConfig{
-			Port:    "8122",
-			Timeout: 5 * time.Second,
+			Port:            "8122",
+			Timeout:         5 * time.Second,
+			ShutdownTimeout: 2 * time.Second,
 		},
 		GRPC: GRPCConfig{
-			Host: "localhost",
-			Port: "50052",
+			Host:    "localhost",
+			Port:    "50051",
+			Timeout: 4 * time.Second,
 		},
 	}
 }
