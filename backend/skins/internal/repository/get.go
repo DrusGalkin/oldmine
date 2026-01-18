@@ -2,6 +2,8 @@ package repository
 
 import (
 	"context"
+	"database/sql"
+	"errors"
 	"go.uber.org/zap"
 	"libs"
 )
@@ -19,6 +21,9 @@ func (r *SkinRepository) Get(ctx context.Context, id int) (string, error) {
 			query,
 			id,
 		).Scan(&path); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return "", nil
+		}
 		return "", libs.QueryError(log, op, err)
 	}
 

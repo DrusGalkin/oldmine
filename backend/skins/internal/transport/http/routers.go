@@ -8,6 +8,7 @@ import (
 	"skins/internal/config"
 	"skins/internal/transport/grpc/client"
 	"skins/internal/transport/http/handler"
+	"skins/internal/transport/http/middleware"
 )
 
 func SetupRouters(hd handler.Handler, grpcClient *client.Auth, path string, cfg *config.Config) *fiber.App {
@@ -18,32 +19,33 @@ func SetupRouters(hd handler.Handler, grpcClient *client.Auth, path string, cfg 
 		corsState(cfg.Env),
 	)
 
-	//md := middleware.
-	//	NewAuthMiddleware(
-	//		grpcClient,
-	//	)
-
-	app.Get("/user/*", static.New(path))
+	app.Get("/uploads/skins/*", static.New(path))
 	app.Get("/:id", hd.Get)
 
-	app.Delete("/:id", hd.Delete)
-	app.Put("/:id", hd.Update)
-	app.Post("/", hd.Save)
+	if cfg.Env == "dev" {
+		app.Delete("/:id", hd.Delete)
+		app.Put("/", hd.Update)
+		app.Post("/", hd.Save)
+	} else {
+		md := middleware.
+			NewAuthMiddleware(
+				grpcClient,
+			)
 
-	// potom....................
-	//auth := app.Use(md.Authenticate())
-	//{
-	//	auth.Delete("/:id", hd.Delete)
-	//	auth.Put("/:id", hd.Update)
-	//	auth.Post("/", hd.Save)
-	//}
+		auth := app.Use(md.Authenticate())
+		{
+			auth.Delete("/:id", hd.Delete)
+			auth.Put("/", hd.Update)
+			auth.Post("/", hd.Save)
+		}
+	}
 
 	return app
 }
 
 func corsState(env string) fiber.Handler {
 	if env == "prod" {
-
+		return cors.New()
 	}
 	return cors.New()
 }

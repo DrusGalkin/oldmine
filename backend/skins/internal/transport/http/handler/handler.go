@@ -7,6 +7,7 @@ import (
 )
 
 const UPLOAD_PATH = "./uploads"
+const FORM_FILE_NAME = "skin"
 
 type Handler interface {
 	Save(ctx fiber.Ctx) error

@@ -19,7 +19,6 @@ func New(host, port string, timeout time.Duration) *Auth {
 		fmt.Sprintf("%s:%s", host, port),
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
-	defer conn.Close()
 	if err != nil {
 		panic("Ошибка подключения к gRPC серверу" + err.Error())
 	}

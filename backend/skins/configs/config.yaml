@@ -4,5 +4,5 @@ http:
   shutdown_timeout: 10s
 grpc:
   host: "localhost"
-  port: 50052
+  port: 50051
   timeout: 30s

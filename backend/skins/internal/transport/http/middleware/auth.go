@@ -18,7 +18,6 @@ func NewAuthMiddleware(grpcClient *client.Auth) *AuthMiddleware {
 func (a *AuthMiddleware) Authenticate() fiber.Handler {
 	return func(c fiber.Ctx) error {
 		sess := c.Cookies("session_id")
-
 		if len(sess) == 0 {
 			return c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{
 				"error": "Неавторизован",

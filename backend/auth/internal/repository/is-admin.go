@@ -2,6 +2,8 @@ package repository
 
 import (
 	"context"
+	"database/sql"
+	"errors"
 	"go.uber.org/zap"
 	"libs"
 )
@@ -18,6 +20,9 @@ func (r AuthRepository) IsAdmin(ctx context.Context, reqID int64) (bool, error) 
 		query,
 		reqID,
 	).Scan(&userID); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return false, nil
+		}
 		return false, libs.QueryError(log, op, err)
 	}
 

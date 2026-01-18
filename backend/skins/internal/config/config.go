@@ -40,7 +40,7 @@ func MustLoad() *Config {
 	path := os.Getenv("CONFIG_PATH")
 	cleanenv.ReadConfig(path, &cfg)
 
-	cfg.Env = os.Getenv("ENV")
+	cfg.Env = getEnv()
 	return &cfg
 }
 
@@ -48,6 +48,7 @@ func getDefaultConfig() *Config {
 	log.Println("Используется дефолтный конфиг")
 
 	return &Config{
+		Env: getEnv(),
 		HTTP: HTTPConfig{
 			Port:            "8122",
 			Timeout:         5 * time.Second,
@@ -59,4 +60,12 @@ func getDefaultConfig() *Config {
 			Timeout: 4 * time.Second,
 		},
 	}
+}
+
+func getEnv() string {
+	env := os.Getenv("ENV")
+	if len(env) == 0 {
+		env = "prod"
+	}
+	return env
 }

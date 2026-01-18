@@ -1,6 +1,7 @@
 package client
 
 import (
+	"fmt"
 	"libs/proto/generate"
 	"skins/internal/domain/dto"
 )
@@ -11,6 +12,7 @@ func (a *Auth) CheckAuth(sess_id string) *dto.ResponseUser {
 
 	auth, err := a.client.CheckAuth(ctx, &generate.AuthRequest{SessId: sess_id})
 	if err != nil {
+		fmt.Println(err)
 		return nil
 	}
 
