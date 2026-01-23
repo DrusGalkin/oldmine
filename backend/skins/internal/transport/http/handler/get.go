@@ -7,6 +7,18 @@ import (
 	"strconv"
 )
 
+// Get godoc
+// @Summary      Получить ссылку на путь к скину
+// @Description  ID пользователя = путь к файлу
+// @Tags 		 Skins
+// @Accept       json
+// @Produce      json
+// @Security	 CookieAuth
+// @Param        id path int true "ID скина"
+// @Success      200  {object}  object
+// @Success      404  {object}  dto.ErrorResponse
+// @Success		 500  {object}  dto.ErrorResponse
+// @Router       /{id} [get]
 func (h *SkinHandler) Get(ctx fiber.Ctx) error {
 	id, _ := strconv.Atoi(ctx.Params("id"))
 

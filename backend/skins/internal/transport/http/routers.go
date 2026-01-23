@@ -5,6 +5,7 @@ import (
 	"github.com/gofiber/fiber/v3/middleware/cors"
 	"github.com/gofiber/fiber/v3/middleware/logger"
 	"github.com/gofiber/fiber/v3/middleware/static"
+	"github.com/gofiber/swagger/v2"
 	"skins/internal/config"
 	"skins/internal/transport/grpc/client"
 	"skins/internal/transport/http/handler"
@@ -19,13 +20,17 @@ func SetupRouters(hd handler.Handler, grpcClient *client.Auth, path string, cfg 
 		corsState(cfg.Env),
 	)
 
+	app.Get("/swagger/*", swagger.HandlerDefault)
+
 	app.Get("/uploads/skins/*", static.New(path))
 	app.Get("/:id", hd.Get)
 
 	if cfg.Env == "dev" {
+
 		app.Delete("/:id", hd.Delete)
 		app.Put("/", hd.Update)
 		app.Post("/", hd.Save)
+
 	} else {
 		md := middleware.
 			NewAuthMiddleware(

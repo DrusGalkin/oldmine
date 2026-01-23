@@ -14,7 +14,7 @@ import (
 
 // @title OldMine Auth Api by AndrewGalkin
 // @version 1.0
-// @description Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05
+// @description Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05.
 // @contact.name Почта
 // @contact.email drus.galkin@mail.ru
 // @securityDefinitions.apikey CookieAuth

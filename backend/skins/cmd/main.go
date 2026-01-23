@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"libs"
+	_ "skins/docs"
 	"skins/internal/app"
 	"skins/internal/config"
 	"skins/internal/transport/http/handler"
@@ -13,7 +14,7 @@ import (
 
 // @title OldMine Skin Api by AndrewGalkin
 // @version 1.0
-// @description Документация запросов микросервиса Skin, по всем вопросам @andrewandrew05
+// @description Документация запросов микросервиса Skin, по всем вопросам @andrewandrew05. Почти для всех запросов требуется авторизация.
 // @contact.name Почта
 // @contact.email drus.galkin@mail.ru
 // @securityDefinitions.apikey CookieAuth

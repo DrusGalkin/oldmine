@@ -8,6 +8,20 @@ import (
 	"strconv"
 )
 
+// Delete godoc
+// @Summary      Удаление скина
+// @Description  Удаление скина пользователя
+// @Tags         Skins
+// @Accept       json
+// @Produce      json
+// @Security     CookieAuth
+// @Param        id path int true "ID пользователя"
+// @Success      204  {object}  object
+// @Success      400  {object}  dto.ErrorResponse
+// @Success      403  {object}  dto.ErrorResponse
+// @Success      404  {object}  dto.ErrorResponse
+// @Success      500  {object}  dto.ErrorResponse
+// @Router       /{id} [delete]
 func (h *SkinHandler) Delete(ctx fiber.Ctx) error {
 	id, _ := strconv.Atoi(ctx.Params("id"))
 	localID := ctx.Locals("id").(int)

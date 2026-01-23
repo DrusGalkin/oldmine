@@ -7,6 +7,19 @@ import (
 	"path/filepath"
 )
 
+// Update godoc
+// @Summary      Обновление скина
+// @Description  Загрузка PNG файла скина
+// @Tags         Skins
+// @Accept       multipart/form-data
+// @Produce      json
+// @Security     CookieAuth
+// @Param        file formData file true "PNG файл скина"
+// @Success      202  {object}  object
+// @Success      400  {object}  dto.ErrorResponse
+// @Success      401  {object}  dto.ErrorResponse
+// @Success      500  {object}  dto.ErrorResponse
+// @Router       / [put]
 func (h *SkinHandler) Update(ctx fiber.Ctx) error {
 	formFile, err := ctx.FormFile(FORM_FILE_NAME)
 	if err != nil {
