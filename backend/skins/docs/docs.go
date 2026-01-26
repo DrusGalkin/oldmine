@@ -18,7 +18,7 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/": {
+        "/api/skins/": {
             "put": {
                 "security": [
                     {
@@ -126,7 +126,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/{id}": {
+        "/api/skins/{id}": {
             "get": {
                 "security": [
                     {

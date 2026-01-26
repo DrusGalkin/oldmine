@@ -16,7 +16,7 @@ import (
 // @Success      201  {object}  object
 // @Success		 400  {object}  dto.ErrorResponse
 // @Success		 500  {object}  dto.ErrorResponse
-// @Router       /register [post]
+// @Router       /api/auth/register [post]
 func (h *AuthHandler) Register(c fiber.Ctx) error {
 	var req dto.RegisterRequest
 	if err := c.Bind().Body(&req); err != nil {

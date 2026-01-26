@@ -16,7 +16,7 @@ import (
 // @Security	 CookieAuth
 // @Success      200  {object}	dto.User
 // @Success		 401  {object}  object
-// @Router       /profile [get]
+// @Router       /api/auth/profile [get]
 func (h *AuthHandler) Profile(c fiber.Ctx) error {
 	sess := session.FromContext(c)
 

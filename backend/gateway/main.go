@@ -1,10 +1,6 @@
 package main
 
 import (
-	"fmt"
-	"net/url"
-	"strings"
-
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/middleware/cors"
 	"github.com/gofiber/fiber/v3/middleware/logger"
@@ -15,76 +11,59 @@ func main() {
 	app := fiber.New()
 	app.Use(cors.New(), logger.New())
 
-	api := app.Group("/api")
-	{
-		api.All("/auth/*", createProxy("http://localhost:8123"))
-		api.All("/skins/*", createProxy("http://localhost:8122"))
-	}
+	// Документация
+	// **************************************************************
+	app.Get("/skins/swagger/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+		return proxy.Do(c, "http://skins:8122/swagger/"+path)
+	})
 
-	docs := app.Group("/docs")
-	{
-		docs.All("/auth/*", createSwaggerProxy("http://localhost:8123"))
-		docs.All("/skins/*", createSwaggerProxy("http://localhost:8122"))
-	}
+	app.Get("/auth/swagger/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+		return proxy.Do(c, "http://auth:8123/swagger/"+path)
+	})
+
+	app.Get("/swagger/auth/doc.json", func(c fiber.Ctx) error {
+		return proxy.Do(c, "http://auth:8123/swagger/doc.json")
+	})
+
+	app.Get("/swagger/skins/doc.json", func(c fiber.Ctx) error {
+		return proxy.Do(c, "http://skins:8122/swagger/doc.json")
+	})
+	// **************************************************************
+
+	// Все остальные запросы для микросервисов
+	// - Auth
+	// - Skins
+	// **************************************************************
+	app.All("/api/auth/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+		return proxy.Do(c, "http://auth:8123/"+path)
+	})
+
+	app.All("/api/skins/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+		return proxy.Do(c, "http://skins:8122/"+path)
+	})
+	// **************************************************************
+
+	app.Get("/", func(c fiber.Ctx) error {
+
+		return c.JSON(fiber.Map{
+			"message": "Gateway for OldMine!",
+			"descriptions": "Чтобы достучаться до документации запросов, надо в строке поиска свагера ввести ссылки " +
+				"на docs.json определенного микросервиса. Берешь к примеру ссылку http://localhost:4000/skins/swagger/ или " +
+				"http://localhost:4000/auth/swagger/, " +
+				"и в поиске указываешь /swagger/skins/doc.json или /swagger/auth/doc.json",
+
+			"endpoints": fiber.Map{
+				"api_auth":      "/api/auth/*",
+				"api_skins":     "/api/skins/*",
+				"swagger_auth":  "/swagger/auth/doc.json",
+				"swagger_skins": "/swagger/skins/doc.json",
+			},
+		})
+	})
 
 	app.Listen(":4000")
-}
-
-func createProxy(baseURL string) fiber.Handler {
-	return func(c fiber.Ctx) error {
-		path := c.Params("*")
-
-		queryString := buildQueryString(c.Queries())
-
-		targetURL := baseURL + "/" + path
-		if queryString != "" {
-			targetURL += "?" + queryString
-		}
-
-		return proxy.Do(c, targetURL)
-	}
-}
-
-func createSwaggerProxy(baseURL string) fiber.Handler {
-	return func(c fiber.Ctx) error {
-		path := c.Params("*")
-
-		queryString := buildQueryString(c.Queries())
-
-		var targetURL string
-
-		if path == "" || path == "/" {
-			targetURL = baseURL + "/swagger/index.html"
-		} else if strings.Contains(path, "swagger.json") ||
-			strings.Contains(path, "openapi.json") ||
-			strings.Contains(path, "swagger.yaml") ||
-			strings.Contains(path, "openapi.yaml") {
-			targetURL = baseURL + "/" + path
-		} else {
-			targetURL = baseURL + "/swagger/" + path
-		}
-
-		if queryString != "" {
-			targetURL += "?" + queryString
-		}
-
-		c.Set("Access-Control-Allow-Origin", "*")
-
-		return proxy.Do(c, targetURL)
-	}
-}
-
-func buildQueryString(queries map[string]string) string {
-	if len(queries) == 0 {
-		return ""
-	}
-
-	var queryParts []string
-	for key, value := range queries {
-		encodedKey := url.QueryEscape(key)
-		encodedValue := url.QueryEscape(value)
-		queryParts = append(queryParts, fmt.Sprintf("%s=%s", encodedKey, encodedValue))
-	}
-
-	return strings.Join(queryParts, "&")
 }

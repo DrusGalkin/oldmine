@@ -13,7 +13,7 @@ info:
   title: OldMine Skin Api by AndrewGalkin
   version: "1.0"
 paths:
-  /:
+  /api/skins/:
     post:
       consumes:
       - multipart/form-data
@@ -82,7 +82,7 @@ paths:
       summary: Обновление скина
       tags:
       - Skins
-  /{id}:
+  /api/skins/{id}:
     delete:
       consumes:
       - application/json

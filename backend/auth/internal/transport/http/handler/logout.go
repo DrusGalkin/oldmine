@@ -14,7 +14,7 @@ import (
 // @Security	 CookieAuth
 // @Success      200  {object}  object
 // @Success		 500  {object}  dto.ErrorResponse
-// @Router       /logout [get]
+// @Router       /api/auth/logout [get]
 func (h *AuthHandler) Logout(c fiber.Ctx) error {
 	sess := session.FromContext(c)
 

@@ -2,7 +2,7 @@ package client
 
 import (
 	"fmt"
-	"libs/proto/generate"
+	"github.com/DrusGalkin/libs/proto/generate"
 	"skins/internal/domain/dto"
 )
 

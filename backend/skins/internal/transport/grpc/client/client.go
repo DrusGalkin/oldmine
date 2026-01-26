@@ -3,9 +3,9 @@ package client
 import (
 	"context"
 	"fmt"
+	"github.com/DrusGalkin/libs/proto/generate"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	"libs/proto/generate"
 	"time"
 )
 

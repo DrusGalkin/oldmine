@@ -1,4 +1,4 @@
-module libs
+module github.com/DrusGalkin/libs
 
 go 1.25.1
 

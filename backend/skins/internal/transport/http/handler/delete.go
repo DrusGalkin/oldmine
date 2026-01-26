@@ -21,7 +21,7 @@ import (
 // @Success      403  {object}  dto.ErrorResponse
 // @Success      404  {object}  dto.ErrorResponse
 // @Success      500  {object}  dto.ErrorResponse
-// @Router       /{id} [delete]
+// @Router       /api/skins/{id} [delete]
 func (h *SkinHandler) Delete(ctx fiber.Ctx) error {
 	id, _ := strconv.Atoi(ctx.Params("id"))
 	localID := ctx.Locals("id").(int)

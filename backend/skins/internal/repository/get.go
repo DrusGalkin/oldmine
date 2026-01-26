@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 	"errors"
+	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
-	"libs"
 )
 
 func (r *SkinRepository) Get(ctx context.Context, id int) (string, error) {

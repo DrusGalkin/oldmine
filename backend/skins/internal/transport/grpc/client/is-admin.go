@@ -1,6 +1,6 @@
 package client
 
-import "libs/proto/generate"
+import "github.com/DrusGalkin/libs/proto/generate"
 
 func (a *Auth) IsAdmin(uid int) bool {
 	ctx, cancel := a.getContext()

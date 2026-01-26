@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"libs"
+	"github.com/DrusGalkin/libs"
 	_ "skins/docs"
 	"skins/internal/app"
 	"skins/internal/config"
@@ -21,6 +21,7 @@ import (
 // @in cookie
 // @name session_id
 // @description Session authentication with cookie
+// @host localhost:4000
 func main() {
 	pkg.MustLoadMkDir(handler.UPLOAD_PATH)
 	db := database.PostgresInit()

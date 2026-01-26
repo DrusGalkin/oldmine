@@ -10,7 +10,7 @@
         "version": "1.0"
     },
     "paths": {
-        "/": {
+        "/api/skins/": {
             "put": {
                 "security": [
                     {
@@ -118,7 +118,7 @@
                 }
             }
         },
-        "/{id}": {
+        "/api/skins/{id}": {
             "get": {
                 "security": [
                     {

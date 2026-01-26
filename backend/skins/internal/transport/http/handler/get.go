@@ -18,7 +18,7 @@ import (
 // @Success      200  {object}  object
 // @Success      404  {object}  dto.ErrorResponse
 // @Success		 500  {object}  dto.ErrorResponse
-// @Router       /{id} [get]
+// @Router       /api/skins/{id} [get]
 func (h *SkinHandler) Get(ctx fiber.Ctx) error {
 	id, _ := strconv.Atoi(ctx.Params("id"))
 

@@ -3,9 +3,9 @@ package repository
 import (
 	"auth/internal/models"
 	"errors"
+	"github.com/DrusGalkin/libs"
 	"github.com/go-playground/validator/v10"
 	"go.uber.org/zap"
-	"libs"
 	"time"
 )
 

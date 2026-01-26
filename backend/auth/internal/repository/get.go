@@ -4,8 +4,8 @@ import (
 	"auth/internal/dto"
 	"auth/internal/models"
 	"errors"
+	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
-	"libs"
 )
 
 func (r AuthRepository) GetUser(email, password string) (dto.User, error) {

@@ -5,10 +5,10 @@ import (
 	"context"
 	"database/sql"
 	"errors"
+	glogger "github.com/DrusGalkin/libs/logger/grpc-logger"
+	"github.com/DrusGalkin/libs/proto/generate"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	glogger "libs/logger/grpc-logger"
-	"libs/proto/generate"
 )
 
 func (s *Server) PaymentVerification(

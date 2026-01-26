@@ -19,7 +19,7 @@ import (
 // @Success      400  {object}  dto.ErrorResponse
 // @Success      401  {object}  dto.ErrorResponse
 // @Success      500  {object}  dto.ErrorResponse
-// @Router       / [post]
+// @Router       /api/skins/ [post]
 func (h *SkinHandler) Save(ctx fiber.Ctx) error {
 	formFile, err := ctx.FormFile(FORM_FILE_NAME)
 	if err != nil {

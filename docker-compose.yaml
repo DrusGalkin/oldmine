@@ -1,7 +1,55 @@
 version: "3.8"
 name: "oldmine"
 
+networks:
+  internal:
+
 services:
+  gateway:
+    build:
+      context: /backend/gateway
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+      - redis
+      - auth
+      - skins
+    networks:
+      internal:
+    volumes:
+      - ./backend/gateway:/app
+      - go-modules:/go/pkg/mod
+    ports:
+      - "4000:4000"
+
+  skins:
+    build:
+      context: /backend/skins
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+      - redis
+      - auth
+    networks:
+      internal:
+    volumes:
+      - ./backend/skins:/app
+      - go-modules:/go/pkg/mod
+    command: ["air", "-c", ".air.toml"]
+
+  auth:
+    build:
+      context: /backend/auth
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      internal:
+    volumes:
+      - ./backend/auth:/app
+      - go-modules:/go/pkg/mod
+    command: ["air", "-c", ".air.toml"]
 
   postgres:
     image: postgres:alpine
@@ -11,6 +59,8 @@ services:
       POSTGRES_PASSWORD: 1
     volumes:
       - pg_data:/var/lib/postgresql/data
+    networks:
+      internal:
 
   redis:
     image: redis:alpine
@@ -18,7 +68,10 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/var/lib/redis/data
+    networks:
+      internal:
 
 volumes:
   redis_data:
   pg_data:
+  go-modules:

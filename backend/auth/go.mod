@@ -4,6 +4,7 @@ go 1.25.1
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.2
+	github.com/DrusGalkin/libs v0.0.1
 	github.com/go-playground/validator/v10 v10.30.1
 	github.com/gofiber/fiber/v3 v3.0.0-rc.3
 	github.com/gofiber/storage/redis v1.3.4
@@ -12,6 +13,7 @@ require (
 	github.com/lib/pq v1.10.9
 	github.com/numbergroup/cleanenv v1.7.2
 	github.com/stretchr/testify v1.11.1
+	github.com/DrusGalkin/libs v0.0.1
 	github.com/swaggo/swag v1.16.6
 	go.uber.org/zap v1.27.1
 	google.golang.org/grpc v1.78.0
@@ -61,7 +63,7 @@ require (
 	golang.org/x/text v0.32.0 // indirect
 	golang.org/x/tools v0.40.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20251029180050-ab9386a59fda // indirect
-	google.golang.org/protobuf v1.36.10 // indirect
+	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	olympos.io/encoding/edn v0.0.0-20201019073823-d3554ca0b0a3 // indirect
 )

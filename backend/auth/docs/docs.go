@@ -18,7 +18,7 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/login": {
+        "/api/auth/login": {
             "post": {
                 "description": "Введите логин и пароль",
                 "consumes": [
@@ -64,7 +64,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/logout": {
+        "/api/auth/logout": {
             "get": {
                 "security": [
                     {
@@ -98,7 +98,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/profile": {
+        "/api/auth/profile": {
             "get": {
                 "security": [
                     {
@@ -132,7 +132,7 @@ const docTemplate = `{
                 }
             }
         },
-        "/register": {
+        "/api/auth/register": {
             "post": {
                 "description": "Введите данные для регистрации",
                 "consumes": [
@@ -248,7 +248,7 @@ var SwaggerInfo = &swag.Spec{
 	BasePath:         "",
 	Schemes:          []string{},
 	Title:            "OldMine Auth Api by AndrewGalkin",
-	Description:      "Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05",
+	Description:      "Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

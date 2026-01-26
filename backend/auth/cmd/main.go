@@ -7,7 +7,7 @@ import (
 	"auth/internal/transport/grpc"
 	"auth/pkg/database"
 	"fmt"
-	"libs"
+	"github.com/DrusGalkin/libs"
 	"os"
 	"time"
 )
@@ -21,6 +21,7 @@ import (
 // @in cookie
 // @name session_id
 // @description Session authentication with cookie
+// @host localhost:4000
 func main() {
 	cfg := config.MustLoadConfig()
 

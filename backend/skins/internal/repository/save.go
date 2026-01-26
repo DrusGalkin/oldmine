@@ -3,8 +3,8 @@ package repository
 import (
 	"context"
 	"errors"
+	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
-	"libs"
 )
 
 func (r *SkinRepository) Save(ctx context.Context, uid int, path string) error {

@@ -3,10 +3,10 @@ package grpc
 import (
 	"auth/internal/repository"
 	"fmt"
+	glogger "github.com/DrusGalkin/libs/logger/grpc-logger"
+	"github.com/DrusGalkin/libs/proto/generate"
 	"github.com/gofiber/fiber/v3"
 	"google.golang.org/grpc"
-	glogger "libs/logger/grpc-logger"
-	"libs/proto/generate"
 	"net"
 )
 

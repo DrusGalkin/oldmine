@@ -6,9 +6,9 @@ import (
 	"encoding/gob"
 	"errors"
 	"fmt"
+	glogger "github.com/DrusGalkin/libs/logger/grpc-logger"
+	"github.com/DrusGalkin/libs/proto/generate"
 	"google.golang.org/grpc/codes"
-	glogger "libs/logger/grpc-logger"
-	"libs/proto/generate"
 )
 
 func (s *Server) CheckAuth(ctx context.Context, req *generate.AuthRequest) (*generate.AuthResponse, error) {

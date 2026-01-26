@@ -2,8 +2,8 @@ package repository
 
 import (
 	"context"
+	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
-	"libs"
 )
 
 func (r *SkinRepository) Update(ctx context.Context, uid int, path string) error {

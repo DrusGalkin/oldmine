@@ -16,7 +16,7 @@ import (
 // @Success      200  {object}  dto.User
 // @Success		 400  {object}  dto.ErrorResponse
 // @Success		 500  {object}  dto.ErrorResponse
-// @Router       /login [post]
+// @Router       /api/auth/login [post]
 func (h *AuthHandler) Login(c fiber.Ctx) error {
 	var req struct {
 		Email    string `json:"email"`

@@ -1,7 +1,7 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05",
+        "description": "Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05.",
         "title": "OldMine Auth Api by AndrewGalkin",
         "contact": {
             "name": "Почта",
@@ -10,7 +10,7 @@
         "version": "1.0"
     },
     "paths": {
-        "/login": {
+        "/api/auth/login": {
             "post": {
                 "description": "Введите логин и пароль",
                 "consumes": [
@@ -56,7 +56,7 @@
                 }
             }
         },
-        "/logout": {
+        "/api/auth/logout": {
             "get": {
                 "security": [
                     {
@@ -90,7 +90,7 @@
                 }
             }
         },
-        "/profile": {
+        "/api/auth/profile": {
             "get": {
                 "security": [
                     {
@@ -124,7 +124,7 @@
                 }
             }
         },
-        "/register": {
+        "/api/auth/register": {
             "post": {
                 "description": "Введите данные для регистрации",
                 "consumes": [
