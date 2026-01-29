@@ -9,7 +9,18 @@ import (
 
 func main() {
 	app := fiber.New()
-	app.Use(cors.New(), logger.New())
+
+	app.Use(
+		logger.New(),
+		cors.New(cors.Config{
+			AllowOrigins:     []string{"http://localhost:5173", "http://localhost:3000"},
+			AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"},
+			AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
+			AllowCredentials: true,
+			ExposeHeaders:    []string{"Set-Cookie"},
+			MaxAge:           86400,
+		}),
+	)
 
 	// Документация
 	// **************************************************************
@@ -38,17 +49,31 @@ func main() {
 	// **************************************************************
 	app.All("/api/auth/*", func(c fiber.Ctx) error {
 		path := c.Params("*")
-		return proxy.Do(c, "http://auth:8123/"+path)
+
+		targetURL := "http://auth:8123/" + path
+
+		proxy.Do(c, targetURL)
+
+		c.Set("Access-Control-Allow-Origin", "http://localhost:5173")
+		c.Set("Access-Control-Allow-Credentials", "true")
+
+		return nil
 	})
 
 	app.All("/api/skins/*", func(c fiber.Ctx) error {
 		path := c.Params("*")
-		return proxy.Do(c, "http://skins:8122/"+path)
+
+		targetURL := "http://skins:8122/" + path
+		proxy.Do(c, targetURL)
+
+		c.Set("Access-Control-Allow-Origin", "http://localhost:5173")
+		c.Set("Access-Control-Allow-Credentials", "true")
+
+		return nil
 	})
 	// **************************************************************
 
 	app.Get("/", func(c fiber.Ctx) error {
-
 		return c.JSON(fiber.Map{
 			"message": "Gateway for OldMine!",
 			"descriptions": "Чтобы достучаться до документации запросов, надо в строке поиска свагера ввести ссылки " +

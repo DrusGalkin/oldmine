@@ -17,7 +17,15 @@ func SetupRouters(hd handler.Handler, grpcClient *client.Auth, path string, cfg 
 
 	app.Use(
 		logger.New(),
-		corsState(cfg.Env),
+		//corsState(cfg.Env),
+		cors.New(cors.Config{
+			AllowOrigins:     []string{"http://localhost:5173", "http://localhost:3000"},
+			AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+			AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
+			AllowCredentials: true,
+			ExposeHeaders:    []string{"Set-Cookie"},
+			MaxAge:           86400,
+		}),
 	)
 
 	app.Get("/swagger/*", swagger.HandlerDefault)
@@ -50,7 +58,14 @@ func SetupRouters(hd handler.Handler, grpcClient *client.Auth, path string, cfg 
 
 func corsState(env string) fiber.Handler {
 	if env == "prod" {
-		return cors.New()
+		return cors.New(cors.Config{
+			AllowOrigins:     []string{"http://localhost:5173", "http://localhost:3000"},
+			AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+			AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
+			AllowCredentials: true,
+			ExposeHeaders:    []string{"Set-Cookie"},
+			MaxAge:           86400,
+		})
 	}
 	return cors.New()
 }

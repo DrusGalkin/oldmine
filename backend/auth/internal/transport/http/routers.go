@@ -26,7 +26,7 @@ func SetupRouters(app *fiber.App, hd handler.Handler, rdb fiber.Storage, cfg *co
 		Extractor:       extractors.Extractor{},
 		IdleTimeout:     cfg.ServerConfig.SessTTl,
 		AbsoluteTimeout: cfg.ServerConfig.AbsoluteSessTTl,
-		CookieSecure:    true,
+		CookieSecure:    false,
 		CookieHTTPOnly:  true,
 		KeyGenerator: func() string {
 			return fmt.Sprintf("sess_%d", time.Now().Unix())
@@ -35,7 +35,14 @@ func SetupRouters(app *fiber.App, hd handler.Handler, rdb fiber.Storage, cfg *co
 
 	app.Use(
 		logger.New(),
-		cors.New(),
+		cors.New(cors.Config{
+			AllowOrigins:     []string{"http://localhost:5173", "http://localhost:3000"},
+			AllowMethods:     []string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
+			AllowHeaders:     []string{"Origin", "Content-Type", "Accept", "Authorization"},
+			AllowCredentials: true,
+			ExposeHeaders:    []string{"Set-Cookie"},
+			MaxAge:           86400,
+		}),
 		session.New(sessCfg),
 		encryptcookie.New(
 			encryptcookie.Config{
