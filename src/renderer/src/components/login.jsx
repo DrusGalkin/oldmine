@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { login } from '../api/auth'
+import Loader from './loader'
+import Profile from './profile'
 
-export default function Auth() {
+export default function Login() {
   const [data, setData] = useState({ email: '', password: '' })
   const [loading, setLoading] = useState(false)
-  const [str, setStr] = useState('')
+  const [auth, setAuth] = useState("")
   const inputStyle =
     'p-3 cursor-pointer hover:scale-101 transition-all rounded border-b-2 rounded-b-none focus:border-b-blue-600 border-b-gray-400 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:border-transparent focus:text-blue-600 hover:outline-none active:outline-none'
 
@@ -12,24 +14,28 @@ export default function Auth() {
     e.preventDefault()
     try{
       setLoading(true)
-      console.log(data)
-      let str = await login(data)
-      setStr(str)
+      let bool = await login(data)
+      setAuth(bool)
     } catch (error) {
       console.error(error)
     }finally {
       setLoading(false)
     }
-
   }
 
-  return (
+  if (auth === true) return <Profile/>
+
+
+  if(loading){
+    return (
+      <div className="w-[468px] h-[236px] flex justify-center items-center">
+        <Loader/>
+      </div>
+    )
+  }
+   return (
     <div className="w-[500px] relative p-4">
       <h1 className="text-yellow-300 text-outline-thin font-['Minecraft']">Вход в аккаунт</h1>
-
-      <p>
-        {str}
-      </p>
       <form
         onSubmit={loginHandler}
         className="flex bg-gray-50 p-6 flex-col gap-6 shadow-lg shadow-black"
