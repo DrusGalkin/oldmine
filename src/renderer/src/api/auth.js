@@ -33,8 +33,6 @@ export const checkAuth = async () => {
     } else if (response.status === 200) {
       return true
     }
-
-
 }
 
 export const profile = async () => {

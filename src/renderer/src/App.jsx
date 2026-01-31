@@ -1,6 +1,5 @@
 import './assets/main.css'
 import Login from './components/login'
-import Logo from './components/logo'
 import { checkAuth } from './api/auth'
 import Profile from './components/profile'
 import { useEffect, useState } from 'react'
