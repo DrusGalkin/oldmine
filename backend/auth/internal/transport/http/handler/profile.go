@@ -19,11 +19,12 @@ import (
 // @Router       /api/auth/profile [get]
 func (h *AuthHandler) Profile(c fiber.Ctx) error {
 	sess := session.FromContext(c)
-
 	return c.JSON(dto.User{
 		ID:        sess.Get("id").(int),
 		Name:      sess.Get("name").(string),
 		Email:     sess.Get("email").(string),
+		Payment:   sess.Get("pay").(bool),
+		Admin:     sess.Get("admin").(bool),
 		CreatedAt: sess.Get("created_at").(time.Time),
 	})
 }

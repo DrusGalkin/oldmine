@@ -7,7 +7,18 @@ import (
 	"github.com/gofiber/fiber/v3/middleware/proxy"
 )
 
+const (
+	SKINS_PROD = "http://skins:8122"
+	SKINS_DEV  = "http://localhost:8122"
+
+	AUTH_PROD = "http://auth:8123"
+	AUTH_DEV  = "http://localhost:8123"
+)
+
 func main() {
+	authURL := AUTH_DEV
+	skinsURL := SKINS_DEV
+
 	app := fiber.New()
 
 	app.Use(
@@ -26,20 +37,20 @@ func main() {
 	// **************************************************************
 	app.Get("/skins/swagger/*", func(c fiber.Ctx) error {
 		path := c.Params("*")
-		return proxy.Do(c, "http://skins:8122/swagger/"+path)
+		return proxy.Do(c, skinsURL+"/swagger/"+path)
 	})
 
 	app.Get("/auth/swagger/*", func(c fiber.Ctx) error {
 		path := c.Params("*")
-		return proxy.Do(c, "http://auth:8123/swagger/"+path)
+		return proxy.Do(c, authURL+"/swagger/"+path)
 	})
 
 	app.Get("/swagger/auth/doc.json", func(c fiber.Ctx) error {
-		return proxy.Do(c, "http://auth:8123/swagger/doc.json")
+		return proxy.Do(c, authURL+"/swagger/doc.json")
 	})
 
 	app.Get("/swagger/skins/doc.json", func(c fiber.Ctx) error {
-		return proxy.Do(c, "http://skins:8122/swagger/doc.json")
+		return proxy.Do(c, skinsURL+"/swagger/doc.json")
 	})
 	// **************************************************************
 
@@ -50,7 +61,7 @@ func main() {
 	app.All("/api/auth/*", func(c fiber.Ctx) error {
 		path := c.Params("*")
 
-		targetURL := "http://auth:8123/" + path
+		targetURL := authURL + "/" + path
 
 		proxy.Do(c, targetURL)
 
@@ -60,10 +71,15 @@ func main() {
 		return nil
 	})
 
+	app.Get("/MinecraftSkins/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+		return proxy.Do(c, skinsURL+"/uploads"+"/"+path)
+	})
+
 	app.All("/api/skins/*", func(c fiber.Ctx) error {
 		path := c.Params("*")
 
-		targetURL := "http://skins:8122/" + path
+		targetURL := skinsURL + "/" + path
 		proxy.Do(c, targetURL)
 
 		c.Set("Access-Control-Allow-Origin", "http://localhost:5173")

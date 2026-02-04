@@ -1,45 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/output.css">
-    <link rel="stylesheet" href="assets/styles/input.css">
-    <title>OldMine</title>
+  <meta charset="UTF-8" />
+  <title>OldMine</title>
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' http://localhost:* ws://localhost:*; connect-src 'self' http://localhost:* ws://localhost:* data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
 </head>
-<body
-        class="p-2 w-full flex flex-col items-center"
-        id="main">
 
-<div class="flex justify-between w-full">
-
-    <div class=" w-[600px] p-6">
-        <div id="auth"></div>
-
-    </div>
-
-    <div class="w-[700px] relative">
-
-        <div>
-            <h1 class="text-center text-white text-outline-thin font-['Minecraft'] text-[100px]">
-                OldMine
-            </h1>
-
-            <p class="absolute right-[50px] translate-x-[-100px] -rotate-3 top-[120px] text-yellow-300 animate-bounce text-outline-thin font-['Minecraft'] ">
-                v1.0.0
-            </p>
-        </div>
-
-    </div>
-
-
-</div>
-
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
 </body>
-<script src="components/background-manager.js"></script>
-<script type="module" src="components/auth.js"></script>
-<script>
-
-
-</script>
 </html>

@@ -26,6 +26,20 @@ func (h *SkinHandler) Delete(ctx fiber.Ctx) error {
 	id, _ := strconv.Atoi(ctx.Params("id"))
 	localID := ctx.Locals("id").(int)
 	admin := ctx.Locals("admin").(bool)
+	name := ctx.Locals("name").(string)
+
+	path, err := h.repo.Get(ctx.Context(), id)
+	if err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{
+				"error": err,
+			})
+		} else {
+			return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+				"error": err,
+			})
+		}
+	}
 
 	if admin {
 		if err := h.repo.Delete(ctx.Context(), id); err != nil {
@@ -33,19 +47,8 @@ func (h *SkinHandler) Delete(ctx fiber.Ctx) error {
 				"error": err,
 			})
 		}
+		os.Remove(path)
 	} else {
-		path, err := h.repo.Get(ctx.Context(), id)
-		if err != nil {
-			if errors.Is(err, sql.ErrNoRows) {
-				return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{
-					"error": err,
-				})
-			} else {
-				return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
-					"error": err,
-				})
-			}
-		}
 
 		if localID != id {
 			return ctx.Status(fiber.StatusForbidden).JSON(fiber.Map{
@@ -64,6 +67,9 @@ func (h *SkinHandler) Delete(ctx fiber.Ctx) error {
 				"message": "Ошибка удаления скина, возможно его не существует",
 			})
 		}
+	}
+	if path == "" {
+		os.Remove(UPLOAD_PATH + "/" + name + ".png")
 	}
 
 	return ctx.Status(fiber.StatusNoContent).JSON(fiber.Map{

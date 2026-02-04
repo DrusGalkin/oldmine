@@ -4,16 +4,13 @@ import (
 	"auth/internal/config"
 	"auth/internal/transport/http/handler"
 	"auth/internal/transport/http/middleware"
-	"encoding/base64"
 	"fmt"
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/extractors"
 	"github.com/gofiber/fiber/v3/middleware/cors"
-	"github.com/gofiber/fiber/v3/middleware/encryptcookie"
 	"github.com/gofiber/fiber/v3/middleware/logger"
 	"github.com/gofiber/fiber/v3/middleware/session"
 	"github.com/gofiber/swagger/v2"
-	"os"
 	"time"
 )
 
@@ -44,14 +41,14 @@ func SetupRouters(app *fiber.App, hd handler.Handler, rdb fiber.Storage, cfg *co
 			MaxAge:           86400,
 		}),
 		session.New(sessCfg),
-		encryptcookie.New(
-			encryptcookie.Config{
-				Key: base64.StdEncoding.
-					EncodeToString(
-						[]byte(os.Getenv("COOKIE_SECRET")),
-					),
-			},
-		),
+		//encryptcookie.New(
+		//	encryptcookie.Config{
+		//		Key: base64.StdEncoding.
+		//			EncodeToString(
+		//				[]byte(os.Getenv("COOKIE_SECRET")),
+		//			),
+		//	},
+		//),
 	)
 
 	app.Get("/swagger/*", swagger.HandlerDefault)

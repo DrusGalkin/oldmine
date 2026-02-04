@@ -12,7 +12,7 @@ type RedisClient struct {
 
 func RedisInit() *RedisClient {
 	db := redis.New(redis.Config{
-		Host: "redis",
+		Host: "localhost",
 		Port: 6379,
 	})
 
