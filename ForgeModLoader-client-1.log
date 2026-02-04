@@ -1,0 +1,352 @@
+2026-02-03 01:28:39 [INFO] [ForgeModLoader] Forge Mod Loader version 4.7.4.520 for Minecraft 1.4.7 loading
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] All core mods are successfully located
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Discovering coremods
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Found library file argo-2.25.jar present and correct in lib dir
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Found library file guava-12.0.1.jar present and correct in lib dir
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Found library file asm-all-4.0.jar present and correct in lib dir
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Found library file bcprov-jdk15on-147.jar present and correct in lib dir
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Running coremod plugins
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Running coremod plugin FMLCorePlugin
+2026-02-03 01:28:39 [INFO] [ForgeModLoader] Found valid fingerprint for Minecraft Forge. Certificate fingerprint de4cf8a3f3bc15635810044c39240bf96804ea7d
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Coremod plugin FMLCorePlugin run successfully
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Running coremod plugin FMLForgePlugin
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Coremod plugin FMLForgePlugin run successfully
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Validating minecraft
+2026-02-03 01:28:39 [FINEST] [ForgeModLoader] Minecraft validated, launching...
+2026-02-03 01:28:40 [INFO] [STDOUT] 27 achievements
+2026-02-03 01:28:40 [INFO] [STDOUT] 210 recipes
+2026-02-03 01:28:40 [INFO] [STDOUT] Setting user: Andrew, --width
+2026-02-03 01:28:40 [INFO] [STDERR] Client asked for parameter: server
+2026-02-03 01:28:40 [INFO] [STDOUT] LWJGL Version: 2.4.2
+2026-02-03 01:28:40 [INFO] [STDOUT] OptiFine_1.4.6_HD_A3
+2026-02-03 01:28:40 [INFO] [STDOUT] Tue Feb 03 01:28:40 MSK 2026
+2026-02-03 01:28:40 [INFO] [STDOUT] OS: Windows 8 (amd64) version 6.2
+2026-02-03 01:28:40 [INFO] [STDOUT] Java: 1.7.0_21, Oracle Corporation
+2026-02-03 01:28:40 [INFO] [STDOUT] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+2026-02-03 01:28:40 [INFO] [STDOUT] LWJGL: 2.4.2
+2026-02-03 01:28:40 [INFO] [STDOUT] OpenGL: Intel(R) Iris(R) Xe Graphics version 4.6.0 - Build 32.0.101.7040, Intel
+2026-02-03 01:28:40 [INFO] [STDOUT] OpenGL Version: 4.0
+2026-02-03 01:28:40 [INFO] [STDOUT] OpenGL Fancy fog: Not available (GL_NV_fog_distance)
+2026-02-03 01:28:40 [INFO] [STDOUT] Checking for new version
+2026-02-03 01:28:40 [INFO] [STDOUT] setupTexture: "/title/mojang.png", id: 1
+2026-02-03 01:28:41 [INFO] [ForgeModLoader] Attempting early MinecraftForge initialization
+2026-02-03 01:28:41 [INFO] [STDOUT] MinecraftForge v6.6.0.497 Initialized
+2026-02-03 01:28:41 [INFO] [ForgeModLoader] MinecraftForge v6.6.0.497 Initialized
+2026-02-03 01:28:41 [INFO] [STDOUT] Replaced 84 ore recipies
+2026-02-03 01:28:41 [INFO] [ForgeModLoader] Completed early MinecraftForge initialization
+2026-02-03 01:28:41 [INFO] [ForgeModLoader] Forge Mod Loader has detected optifine OptiFine_1.4.6_HD_A3, enabling compatibility features
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Building injected Mod Containers [cpw.mods.fml.common.FMLDummyContainer, net.minecraftforge.common.ForgeDummyContainer]
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Attempting to load mods contained in the minecraft jar file and associated classes
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Found a minecraft related file at C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\bin\minecraft.jar, examining for mod candidates
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Skipping known library file C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\bin\lwjgl.jar
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Skipping known library file C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\bin\lwjgl_util.jar
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Skipping known library file C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\bin\jinput.jar
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Skipping known library file C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\lib\argo-2.25.jar
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Skipping known library file C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\lib\guava-12.0.1.jar
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Skipping known library file C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\lib\asm-all-4.0.jar
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Skipping known library file C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\lib\bcprov-jdk15on-147.jar
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Minecraft jar mods loaded successfully
+2026-02-03 01:28:41 [INFO] [ForgeModLoader] Searching C:\Users\AndrewGalkin\AppData\Roaming\.minecraft\mods for mods
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Examining file minecraft.jar for potential mods
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] The mod container minecraft.jar appears to be missing an mcmod.info file
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Identified a BaseMod type mod mod_TooManyItems
+2026-02-03 01:28:41 [INFO] [ForgeModLoader] Forge Mod Loader has identified 4 mods to load
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Received a system property request ''
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] System property request managing the state of 0 mods
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] After merging, found state information for 0 mods
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Activating mod mcp
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Activating mod FML
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Activating mod Forge
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Enabling mod mod_TooManyItems
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Activating mod mod_TooManyItems
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Verifying mod requirements are satisfied
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] All mod requirements are satisfied
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Sorting mods into an ordered list
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Mod sorting completed successfully
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Mod sorting data:
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] 	mod_TooManyItems(mod_TooManyItems:Not available): minecraft.jar ()
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mcp
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mcp
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod FML
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod FML
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod Forge
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod Forge
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLConstructionEvent to mod mod_TooManyItems
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] No MLProp configuration for mod_TooManyItems found or required. No file written
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Injecting dummy network mod handler for BaseMod mod_TooManyItems
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Attempting to inject @SidedProxy classes into mod_TooManyItems
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLConstructionEvent to mod mod_TooManyItems
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] Mod signature data:
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] 	mcp(Minecraft Coder Pack:7.26): minecraft.jar (NO VALID CERTIFICATE FOUND)
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] 	FML(Forge Mod Loader:4.7.4.520): coremods (de4cf8a3f3bc15635810044c39240bf96804ea7d)
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] 	Forge(Minecraft Forge:6.6.0.497): coremods (NO VALID CERTIFICATE FOUND)
+2026-02-03 01:28:41 [FINE] [ForgeModLoader] 	mod_TooManyItems(mod_TooManyItems:1.4.7 2012-01-09): minecraft.jar (NO VALID CERTIFICATE FOUND)
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mcp
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mcp
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod FML
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod FML
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod Forge
+2026-02-03 01:28:41 [INFO] [ForgeModLoader] Configured a dormant chunk cache size of 0
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod Forge
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sending event FMLPreInitializationEvent to mod mod_TooManyItems
+2026-02-03 01:28:41 [FINER] [ForgeModLoader] Sent event FMLPreInitializationEvent to mod mod_TooManyItems
+2026-02-03 01:28:41 [INFO] [STDOUT] Starting up SoundSystem...
+2026-02-03 01:28:42 [INFO] [STDOUT] Initializing LWJGL OpenAL
+2026-02-03 01:28:42 [INFO] [STDOUT]     (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+2026-02-03 01:28:42 [INFO] [STDOUT] OpenAL initialized.
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/terrain.png", id: 7
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdj@2bad298f, texId: 7, index: 237
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdm@73396d2, texId: 7, index: 205
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdk@4bf2b8af, texId: 7, index: 14
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/gui/items.png", id: 8
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdf@113c53c8, texId: 8, index: 54
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bde@5be463a2, texId: 8, index: 70
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdl@3842d9da, texId: 7, index: 206
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdi@2cec9411, texId: 7, index: 238
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdh@5fecff21, texId: 7, index: 31
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: bdh@406200ba, texId: 7, index: 47
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdj@2bad298f, texId: 7, index: 237
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDLavaFX@3b1f1f5, texId: 7, index: 237
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdm@73396d2, texId: 7, index: 205
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDWaterFX@17840db8, texId: 7, index: 205
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdk@4bf2b8af, texId: 7, index: 14
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDPortalFX@954778a, texId: 7, index: 14
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdl@3842d9da, texId: 7, index: 206
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDWaterFlowFX@87409cf, texId: 7, index: 206
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdi@2cec9411, texId: 7, index: 238
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDLavaFlowFX@7a2ff95e, texId: 7, index: 238
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdh@5fecff21, texId: 7, index: 31
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDFlamesFX@639cc8fd, texId: 7, index: 31
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdh@406200ba, texId: 7, index: 47
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDFlamesFX@1f0fe1de, texId: 7, index: 47
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bdf@113c53c8, texId: 8, index: 54
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDCompassFX@6490e556, texId: 8, index: 54
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX removed: bde@5be463a2, texId: 8, index: 70
+2026-02-03 01:28:42 [INFO] [STDOUT] TextureFX registered: TextureHDWatchFX@73836c7f, texId: 8, index: 70
+2026-02-03 01:28:42 [INFO] [STDOUT] Loading custom colors: /misc/grasscolor.png
+2026-02-03 01:28:42 [INFO] [STDOUT] Loading custom colors: /misc/foliagecolor.png
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/ctm.png", id: 9
+2026-02-03 01:28:42 [INFO] [STDOUT] MatchingCtmPng: true
+2026-02-03 01:28:42 [INFO] [STDOUT] Registering default ConnectedTextures
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLInitializationEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [INFO] [STDOUT] 
+
+[TMI] Forge detected. Please ignore overzealous Forge error messages pertaining to TMI item replacements. Thank you.
+
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLInitializationEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mcp
+2026-02-03 01:28:42 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event IMCEvent to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event IMCEvent to mod FML
+2026-02-03 01:28:42 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event IMCEvent to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event IMCEvent to mod Forge
+2026-02-03 01:28:42 [FINEST] [ForgeModLoader] Attempting to deliver 0 IMC messages to mod mod_TooManyItems
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event IMCEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event IMCEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLPostInitializationEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLPostInitializationEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mcp
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod FML
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod Forge
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sending event FMLLoadCompleteEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Handling post startup activities for ModLoader mod mod_TooManyItems
+2026-02-03 01:28:42 [FINEST] [ForgeModLoader] Requesting renderers from basemod mod_TooManyItems
+2026-02-03 01:28:42 [FINEST] [ForgeModLoader] Received 52 renderers from basemod mod_TooManyItems
+2026-02-03 01:28:42 [FINER] [ForgeModLoader] Sent event FMLLoadCompleteEvent to mod mod_TooManyItems
+2026-02-03 01:28:42 [INFO] [ForgeModLoader] Forge Mod Loader has successfully loaded 4 mods
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/title/bg/panorama0.png", id: 12
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/title/bg/panorama1.png", id: 13
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/title/bg/panorama2.png", id: 14
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/title/bg/panorama3.png", id: 15
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/title/bg/panorama4.png", id: 16
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/title/bg/panorama5.png", id: 17
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/title/mclogo.png", id: 18
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/gui/gui.png", id: 19
+2026-02-03 01:28:42 [INFO] [STDOUT] setupTexture: "/gui/particles.png", id: 20
+2026-02-03 01:28:43 [INFO] [STDOUT] setupTexture: "/gui/background.png", id: 21
+2026-02-03 01:28:45 [FINE] [ForgeModLoader] The difference set is not equal: only on right={52=Item 52, Type ald, owned by Minecraft, ordinal 0, name null, claimedModId null, 59=Item 59, Type ajq, owned by Minecraft, ordinal 0, name null, claimedModId null, 78=Item 78, Type amw, owned by Minecraft, ordinal 0, name null, claimedModId null, 100=Item 100, Type akq, owned by Minecraft, ordinal 1, name null, claimedModId null, 99=Item 99, Type akq, owned by Minecraft, ordinal 0, name null, claimedModId null, 104=Item 104, Type ami, owned by Minecraft, ordinal 0, name null, claimedModId null, 105=Item 105, Type ami, owned by Minecraft, ordinal 1, name null, claimedModId null, 115=Item 115, Type alh, owned by Minecraft, ordinal 0, name null, claimedModId null}
+2026-02-03 01:28:45 [INFO] [STDOUT] ViewRadius: 10, for: ik@568ef25 (constructor)
+2026-02-03 01:28:45 [INFO] [ForgeModLoader] Loading dimension 0 (Новый мир) (bdz@6c4ac28a)
+2026-02-03 01:28:45 [INFO] [STDOUT] ViewRadius: 10, for: ik@47c65163 (constructor)
+2026-02-03 01:28:45 [INFO] [ForgeModLoader] Loading dimension 1 (Новый мир) (bdz@6c4ac28a)
+2026-02-03 01:28:45 [INFO] [STDOUT] ViewRadius: 10, for: ik@7db42154 (constructor)
+2026-02-03 01:28:45 [INFO] [ForgeModLoader] Loading dimension -1 (Новый мир) (bdz@6c4ac28a)
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mcp
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mcp
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod FML
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod FML
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod Forge
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod Forge
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartingEvent to mod mod_TooManyItems
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartingEvent to mod mod_TooManyItems
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mcp
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mcp
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod FML
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod FML
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod Forge
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod Forge
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sending event FMLServerStartedEvent to mod mod_TooManyItems
+2026-02-03 01:28:45 [FINER] [ForgeModLoader] Sent event FMLServerStartedEvent to mod mod_TooManyItems
+2026-02-03 01:28:46 [INFO] [STDERR] java.io.IOException: Server returned HTTP response code: 500 for URL: http://localhost:4000/MinecraftSkins/Andrew.png
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection$6.run(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at java.security.AccessController.doPrivileged(Native Method)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at bas.run(SourceFile:33)
+2026-02-03 01:28:46 [INFO] [STDERR] Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: http://localhost:4000/MinecraftSkins/Andrew.png
+2026-02-03 01:28:46 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+2026-02-03 01:28:46 [INFO] [STDERR] 	at bas.run(SourceFile:26)
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/terrain/sun.png", id: 24
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/terrain/moon_phases.png", id: 25
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/environment/clouds.png", id: 26
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/bat.png", id: 27
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/cavespider.png", id: 28
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/chicken.png", id: 29
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/cow.png", id: 30
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/creeper.png", id: 31
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/enderman.png", id: 32
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/ghast.png", id: 33
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/ghast_fire.png", id: 34
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/lava.png", id: 35
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/ozelot.png", id: 36
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/pig.png", id: 37
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/pigzombie.png", id: 38
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/sheep.png", id: 39
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/sheep_fur.png", id: 40
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/skeleton.png", id: 41
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/skeleton_wither.png", id: 42
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/slime.png", id: 43
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/spider.png", id: 44
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/squid.png", id: 45
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/wolf.png", id: 46
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/zombie.png", id: 47
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/mob/char.png", id: 48
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "%blur%/misc/vignette.png", id: 49
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/gui/icons.png", id: 50
+2026-02-03 01:28:46 [INFO] [STDOUT] [TMI] Please ignore Forge item allocation errors. The items are fine.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [SEVERE] [ForgeModLoader] It appears something has tried to allocate an Item outside of the initialization phase of Minecraft, this could be very bad for your network connectivity.
+2026-02-03 01:28:46 [INFO] [STDOUT] Class not present: LightCache
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/armor/gold_1.png", id: 51
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "%clamp%/misc/shadow.png", id: 52
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/armor/cloth_1.png", id: 53
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/armor/cloth_1_b.png", id: 54
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/armor/cloth_2.png", id: 55
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "/armor/cloth_2_b.png", id: 56
+2026-02-03 01:28:46 [INFO] [STDOUT] setupTexture: "%blur%/misc/glint.png", id: 57
+2026-02-03 01:28:47 [INFO] [STDOUT] Allocated subtessellator, count: 1
+2026-02-03 01:28:49 [INFO] [STDOUT] setupTexture: "/mob/spider_eyes.png", id: 58
+2026-02-03 01:28:52 [INFO] [STDOUT] setupTexture: "/mob/enderman_eyes.png", id: 59
+2026-02-03 01:29:01 [INFO] [STDERR] java.net.ConnectException: Connection timed out: connect
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.Socket.connect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at java.net.Socket.connect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.NetworkClient.doConnect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.New(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.New(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+2026-02-03 01:29:01 [INFO] [STDERR] 	at VersionCheckThread.run(VersionCheckThread.java:26)
+2026-02-03 01:29:03 [INFO] [STDERR] java.net.ConnectException: Connection timed out: connect
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at java.net.Socket.connect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.NetworkClient.doConnect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.New(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.New(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+2026-02-03 01:29:03 [INFO] [STDERR] 	at arn.run(ThreadDownloadResources.java:57)
+2026-02-03 01:29:03 [INFO] [STDOUT] setupTexture: "/item/chest.png", id: 60
+2026-02-03 01:29:06 [INFO] [STDERR] java.net.ConnectException: Connection timed out: connect
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.PlainSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.SocksSocketImpl.connect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.Socket.connect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at java.net.Socket.connect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.NetworkClient.doConnect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.New(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.http.HttpClient.New(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+2026-02-03 01:29:06 [INFO] [STDERR] 	at bas.run(SourceFile:25)
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod mcp
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod mcp
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod FML
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod FML
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod Forge
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod Forge
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppingEvent to mod mod_TooManyItems
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppingEvent to mod mod_TooManyItems
+2026-02-03 01:30:49 [INFO] [ForgeModLoader] Unloading dimension 0
+2026-02-03 01:30:49 [INFO] [ForgeModLoader] Unloading dimension -1
+2026-02-03 01:30:49 [INFO] [ForgeModLoader] Unloading dimension 1
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mcp
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mcp
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod FML
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod FML
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod Forge
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod Forge
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sending event FMLServerStoppedEvent to mod mod_TooManyItems
+2026-02-03 01:30:49 [FINER] [ForgeModLoader] Sent event FMLServerStoppedEvent to mod mod_TooManyItems
+2026-02-03 01:30:49 [INFO] [STDOUT] Stopping!
+2026-02-03 01:30:49 [INFO] [STDOUT] SoundSystem shutting down...
+2026-02-03 01:30:50 [INFO] [STDOUT]     Author: Paul Lamb, www.paulscode.com

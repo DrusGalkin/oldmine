@@ -1,0 +1,502 @@
+2014-01-14 18:37:00 [CLIENT] [INFO] Setting user: 
+2014-01-14 18:37:00 [CLIENT] [INFO] LWJGL Version: 2.4.2
+2014-01-14 18:37:03 [CLIENT] [INFO] Found animation info for: textures/blocks/lava_flow.txt
+2014-01-14 18:37:03 [CLIENT] [INFO] Found animation info for: textures/blocks/water_flow.txt
+2014-01-14 18:37:03 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_0.txt
+2014-01-14 18:37:03 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_1.txt
+2014-01-14 18:37:03 [CLIENT] [INFO] Found animation info for: textures/blocks/lava.txt
+2014-01-14 18:37:03 [CLIENT] [INFO] Found animation info for: textures/blocks/portal.txt
+2014-01-14 18:37:03 [CLIENT] [INFO] Found animation info for: textures/blocks/water.txt
+2014-01-14 18:37:05 [CLIENT] [INFO] Found animation info for: textures/items/clock.txt
+2014-01-14 18:37:05 [CLIENT] [INFO] Found animation info for: textures/items/compass.txt
+2014-01-14 18:38:57 [CLIENT] [INFO] Stopping!
+2014-01-14 18:41:03 [CLIENT] [INFO] Setting user: crazy991
+2014-01-14 18:41:03 [CLIENT] [INFO] LWJGL Version: 2.4.2
+2014-01-14 18:41:07 [CLIENT] [INFO] Found animation info for: textures/blocks/lava_flow.txt
+2014-01-14 18:41:07 [CLIENT] [INFO] Found animation info for: textures/blocks/water_flow.txt
+2014-01-14 18:41:07 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_0.txt
+2014-01-14 18:41:07 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_1.txt
+2014-01-14 18:41:07 [CLIENT] [INFO] Found animation info for: textures/blocks/lava.txt
+2014-01-14 18:41:07 [CLIENT] [INFO] Found animation info for: textures/blocks/portal.txt
+2014-01-14 18:41:07 [CLIENT] [INFO] Found animation info for: textures/blocks/water.txt
+2014-01-14 18:41:08 [CLIENT] [INFO] Found animation info for: textures/items/clock.txt
+2014-01-14 18:41:08 [CLIENT] [INFO] Found animation info for: textures/items/compass.txt
+2014-01-14 18:41:42 [CLIENT] [INFO] Connecting to 37.59.24.21, 25565
+2014-01-14 18:41:42 [CLIENT] [INFO] [CHAT] §a[N] §fThis server has online-mode=false!
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §eIntensive server activity has been HALTED.
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §f §f §1 §0 §2 §4§f §f §2 §0 §4 §8§0§1§0§1§2§f§f§0§1§3§4§f§f§0§1§5§f§f§0§1§6§f§f§0§1§8§9§a§b§f§f§0§1§7§f§f§3 §9 §2 §0 §0 §1§3 §9 §2 §0 §0 §2§3 §9 §2 §0 §0 §3§0§0§1§f§e§0§0§2§f§e§0§0§3§4§5§6§7§8§f§e
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r               §7Привет,§4 crazy991§c!                    
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r         §7Вы находитесь на §eLobby §7проекта      
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r                   §eFunny-§eWorld                                     
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r            §7Наш сайт: §4http://funny-world.su/               
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r         §7Наша группа: §4http://vk.com/mcfunnyworld            
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §cВойди в игру используя /l §9<ваш_пароль>
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r            §7Наш ip: §437.59.24.21                          
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] §r§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-
+2014-01-14 18:41:43 [CLIENT] [INFO] [CHAT] A new §eOptiFine§f version is available: §eHD_U D5§f
+2014-01-14 18:41:45 [CLIENT] [INFO] [CHAT]  §8[§2?§8] §f§7[?]§7[§aLobby§7] time_master900  §3? §7+
+2014-01-14 18:41:48 [CLIENT] [INFO] [CHAT] §cВойди в игру используя /l §9<ваш_пароль>
+2014-01-14 18:41:53 [CLIENT] [INFO] [CHAT] §cВойди в игру используя /l §9<ваш_пароль>
+2014-01-14 18:41:54 [CLIENT] [INFO] Stopping!
+2014-01-14 18:42:05 [CLIENT] [INFO] Setting user: crazy9911
+2014-01-14 18:42:05 [CLIENT] [INFO] LWJGL Version: 2.4.2
+2014-01-14 18:42:09 [CLIENT] [INFO] Found animation info for: textures/blocks/lava_flow.txt
+2014-01-14 18:42:09 [CLIENT] [INFO] Found animation info for: textures/blocks/water_flow.txt
+2014-01-14 18:42:09 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_0.txt
+2014-01-14 18:42:09 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_1.txt
+2014-01-14 18:42:09 [CLIENT] [INFO] Found animation info for: textures/blocks/lava.txt
+2014-01-14 18:42:09 [CLIENT] [INFO] Found animation info for: textures/blocks/portal.txt
+2014-01-14 18:42:09 [CLIENT] [INFO] Found animation info for: textures/blocks/water.txt
+2014-01-14 18:42:11 [CLIENT] [INFO] Found animation info for: textures/items/clock.txt
+2014-01-14 18:42:11 [CLIENT] [INFO] Found animation info for: textures/items/compass.txt
+2014-01-14 18:42:36 [CLIENT] [INFO] Connecting to 37.59.24.21, 25565
+2014-01-14 18:42:36 [CLIENT] [INFO] [CHAT] §a[N] §fThis server has online-mode=false!
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §eIntensive server activity has been HALTED.
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §f §f §1 §0 §2 §4§f §f §2 §0 §4 §8§0§1§0§1§2§f§f§0§1§3§4§f§f§0§1§5§f§f§0§1§6§f§f§0§1§8§9§a§b§f§f§0§1§7§f§f§3 §9 §2 §0 §0 §1§3 §9 §2 §0 §0 §2§3 §9 §2 §0 §0 §3§0§0§1§f§e§0§0§2§f§e§0§0§3§4§5§6§7§8§f§e
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §cВойди в игру используя /l §9<ваш_пароль>
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r               §7Привет,§4 crazy9911§c!                    
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r         §7Вы находитесь на §eLobby §7проекта      
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r                   §eFunny-§eWorld                                     
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r            §7Наш сайт: §4http://funny-world.su/               
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r         §7Наша группа: §4http://vk.com/mcfunnyworld            
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r            §7Наш ip: §437.59.24.21                          
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] §r§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-
+2014-01-14 18:42:37 [CLIENT] [INFO] [CHAT] A new §eOptiFine§f version is available: §eHD_U D5§f
+2014-01-14 18:42:42 [CLIENT] [INFO] [CHAT] §cВойди в игру используя /l §9<ваш_пароль>
+2014-01-14 18:42:47 [CLIENT] [INFO] [CHAT] §cВойди в игру используя /l §9<ваш_пароль>
+2014-01-14 18:42:48 [CLIENT] [INFO] [CHAT]  §8[§6?§8] §f§7[?]§7[§aLobby§7] Ruslan233  §3? §7§oКто рекламировал сервер
+2014-01-14 18:42:49 [CLIENT] [INFO] [CHAT] §bНеправильный пароль!
+2014-01-14 18:42:52 [CLIENT] [INFO] [CHAT] §cВойди в игру используя /l §9<ваш_пароль>
+2014-01-14 18:42:53 [CLIENT] [INFO] Stopping!
+2014-01-14 18:43:04 [CLIENT] [INFO] Setting user: sporbie
+2014-01-14 18:43:04 [CLIENT] [INFO] LWJGL Version: 2.4.2
+2014-01-14 18:43:07 [CLIENT] [INFO] Found animation info for: textures/blocks/lava_flow.txt
+2014-01-14 18:43:07 [CLIENT] [INFO] Found animation info for: textures/blocks/water_flow.txt
+2014-01-14 18:43:07 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_0.txt
+2014-01-14 18:43:07 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_1.txt
+2014-01-14 18:43:07 [CLIENT] [INFO] Found animation info for: textures/blocks/lava.txt
+2014-01-14 18:43:07 [CLIENT] [INFO] Found animation info for: textures/blocks/portal.txt
+2014-01-14 18:43:07 [CLIENT] [INFO] Found animation info for: textures/blocks/water.txt
+2014-01-14 18:43:08 [CLIENT] [INFO] Found animation info for: textures/items/clock.txt
+2014-01-14 18:43:08 [CLIENT] [INFO] Found animation info for: textures/items/compass.txt
+2014-01-14 18:43:09 [CLIENT] [INFO] Stopping!
+2014-01-14 18:43:17 [CLIENT] [INFO] Setting user: Sporbie
+2014-01-14 18:43:17 [CLIENT] [INFO] LWJGL Version: 2.4.2
+2014-01-14 18:43:20 [CLIENT] [INFO] Found animation info for: textures/blocks/lava_flow.txt
+2014-01-14 18:43:20 [CLIENT] [INFO] Found animation info for: textures/blocks/water_flow.txt
+2014-01-14 18:43:20 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_0.txt
+2014-01-14 18:43:20 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_1.txt
+2014-01-14 18:43:20 [CLIENT] [INFO] Found animation info for: textures/blocks/lava.txt
+2014-01-14 18:43:20 [CLIENT] [INFO] Found animation info for: textures/blocks/portal.txt
+2014-01-14 18:43:20 [CLIENT] [INFO] Found animation info for: textures/blocks/water.txt
+2014-01-14 18:43:21 [CLIENT] [INFO] Found animation info for: textures/items/clock.txt
+2014-01-14 18:43:21 [CLIENT] [INFO] Found animation info for: textures/items/compass.txt
+2014-01-14 18:43:25 [CLIENT] [INFO] Connecting to 37.59.24.21, 25565
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §a[N] §fThis server has online-mode=false!
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §eIntensive server activity has been HALTED.
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §cЗарегистрируйтесь используя /reg §9<ваш_сложный_пароль> <повтор_пароля>
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r               §7Привет,§4 Sporbie§c!                    
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r         §7Вы находитесь на §eLobby §7проекта      
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r                   §eFunny-§eWorld                                     
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r            §7Наш сайт: §4http://funny-world.su/               
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r         §7Наша группа: §4http://vk.com/mcfunnyworld            
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r            §7Наш ip: §437.59.24.21                          
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §r§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-§6-§8-
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] §f §f §1 §0 §2 §4§f §f §2 §0 §4 §8§0§1§0§1§2§f§f§0§1§3§4§f§f§0§1§5§f§f§0§1§6§f§f§0§1§8§9§a§b§f§f§0§1§7§f§f§3 §9 §2 §0 §0 §1§3 §9 §2 §0 §0 §2§3 §9 §2 §0 §0 §3§0§0§1§f§e§0§0§2§f§e§0§0§3§4§5§6§7§8§f§e
+2014-01-14 18:43:26 [CLIENT] [INFO] [CHAT] A new §eOptiFine§f version is available: §eHD_U D5§f
+2014-01-14 18:43:31 [CLIENT] [INFO] [CHAT] §cЗарегистрируйтесь используя /reg §9<ваш_сложный_пароль> <повтор_пароля>
+2014-01-14 18:43:36 [CLIENT] [INFO] [CHAT] §cЗарегистрируйтесь используя /reg §9<ваш_сложный_пароль> <повтор_пароля>
+2014-01-14 18:43:41 [CLIENT] [INFO] [CHAT] §cЗарегистрируйтесь используя /reg §9<ваш_сложный_пароль> <повтор_пароля>
+2014-01-14 18:43:46 [CLIENT] [INFO] [CHAT] §aВы успешно зарегистрировались! §4Пожалуйста, запишите пароль на бумажку, т.к. администрация не восстанавливает забытые пароли.
+2014-01-14 18:43:53 [CLIENT] [INFO] [CHAT]  §8[§6?§8] §f§7[?]§7[§aLobby§7] KirAFisH  §3? §7§oУ кого есть xbox 360 и gta v
+2014-01-14 18:43:56 [CLIENT] [INFO] [CHAT] §6[Funny-World] §6На сервере присутсвует автоматическая система доната. §3Website: http://funny-world.su/
+2014-01-14 18:44:11 [CLIENT] [INFO] [CHAT]  §8[§6?§8] §f§7[?]§7[§aLobby§7] KirAFisH  §3? §7§oУ кого есть xbox 360 и gta v пиши +++++
+2014-01-14 18:44:13 [CLIENT] [INFO] [CHAT]  §8[§2?§8] §f§7[?]§7[§aLobby§7] erik1008  §3? §7кто мир со скайпом ставь +
+2014-01-14 18:44:36 [CLIENT] [INFO] [CHAT]  §8[§6?§8] §f§7[?]§7[§aLobby§7] KirAFisH  §3? §7§oУ кого есть xbox 360 и gta v пиши +++++
+2014-01-14 18:44:52 [CLIENT] [INFO] [CHAT]  §8[§2?§8] §f§7[?]§7[§aLobby§7] Shoyru  §3? §7+
+2014-01-14 18:44:56 [CLIENT] [INFO] [CHAT] §6[Funny-World] §6По всем вопросам писать в Skype: FnwAdm
+2014-01-14 18:45:01 [CLIENT] [INFO] [CHAT]  §8[§6?§8] §f§7[?]§7[§aLobby§7] KirAFisH  §3? §7§oУ кого есть xbox 360 и gta v пиши +++++
+2014-01-14 18:45:14 [CLIENT] [INFO] [CHAT]  §8[§2?§8] §f§7[?]§7[§aLobby§7] ohPrxm  §3? §7+++++++++++++++++++++++++========
+2014-01-14 18:45:14 [CLIENT] [INFO] [CHAT] §a[N] §f§6Nakaba6 has entered visual range.
+2014-01-14 18:45:15 [CLIENT] [INFO] [CHAT] §a[N] §f§6OrigiN has entered visual range.
+2014-01-14 18:45:15 [CLIENT] [INFO] [CHAT] §a[N] §f§6ckillid has entered visual range.
+2014-01-14 18:45:34 [CLIENT] [INFO] [CHAT]  §8[§6?§8] §f§7[?]§7[§aLobby§7] KirAFisH  §3? §7§oУ кого есть xbox 360 и gta v пиши +++++
+2014-01-14 18:45:56 [CLIENT] [INFO] [CHAT] §6[Funny-World] §6Зайди пожалуйста в нашу группу Вконтакте, и ты будешь всегда в курсе всех событий! - §d http://vk.com/mcfunnyworld
+2014-01-14 18:46:53 [CLIENT] [INFO] [CHAT] §6Пффф, Все игроки исчезли.
+2014-01-14 18:46:54 [CLIENT] [INFO] [CHAT] §4Подожди 5 секунд.
+2014-01-14 18:46:56 [CLIENT] [INFO] [CHAT] §6[Funny-World] §6На сервере присутсвует автоматическая система доната. §3Website: http://funny-world.su/
+2014-01-14 18:47:27 [CLIENT] [INFO] [CHAT] §eTotally Radical DUDDee!
+2014-01-14 18:47:33 [CLIENT] [INFO] [CHAT] §cI'm sorry, but you do not have permission to perform this command. Please contact the server administrators if you believe that this is in error.
+2014-01-14 18:47:56 [CLIENT] [INFO] [CHAT] §6[Funny-World] §6По всем вопросам писать в Skype: FnwAdm
+2014-01-14 18:48:01 [CLIENT] [INFO] [CHAT] §cError:§4 §4You need the §cessentials.kits.start§4 permission to use that kit.
+2014-01-14 18:49:20 [CLIENT] [INFO] Connecting to 46.174.49.34, 25590
+2014-01-14 18:49:21 [CLIENT] [INFO] [CHAT] §c[N] §2This server has online-mode=false!
+2014-01-14 18:50:18 [CLIENT] [INFO] Connecting to 46.174.50.31, 25588
+2014-01-14 18:50:18 [CLIENT] [INFO] [CHAT] §c[N] §2This server has online-mode=false!
+2014-01-14 18:50:19 [CLIENT] [INFO] [CHAT] §cPlease register with "/register password ConfirmPassword"
+2014-01-14 18:50:19 [CLIENT] [INFO] [CHAT] §dWelcome Sporbie§d to the server!
+2014-01-14 18:50:19 [CLIENT] [INFO] [CHAT] §r§6Welcome, Sporbie§6!
+2014-01-14 18:50:19 [CLIENT] [INFO] [CHAT] §r§6Type §c/help§6 for a list of commands.
+2014-01-14 18:50:19 [CLIENT] [INFO] [CHAT] §r§6Currently online:§r §bDoctor, §bfdfggh, §bThe1Flame, §bDJ_Jack, Sporbie
+2014-01-14 18:50:19 [CLIENT] [INFO] [CHAT] §f §f §1 §0 §2 §4§f §f §2 §0 §4 §8§3 §9 §2 §0 §0 §1§3 §9 §2 §0 §0 §2§3 §9 §2 §0 §0 §3§0§0§1§f§e§0§0§2§f§e§0§0§3§4§5§6§7§8§f§e§0§1§0§1§2§f§f§0§1§3§4§f§f§0§1§5§f§f§0§1§6§f§f§0§1§8§9§a§b§f§f§0§1§7§f§f
+2014-01-14 18:50:19 [CLIENT] [INFO] [CHAT] §eSporbie joined the game.
+2014-01-14 18:50:24 [CLIENT] [INFO] [CHAT] §cPlease register with "/register password ConfirmPassword"
+2014-01-14 18:50:30 [CLIENT] [INFO] [CHAT] §cPlease register with "/register password ConfirmPassword"
+2014-01-14 18:50:33 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: я делаю себе железку
+2014-01-14 18:50:34 [CLIENT] [INFO] [CHAT] §cSuccessfully registered!
+2014-01-14 18:50:48 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: ок твой дом че хочеш делай
+2014-01-14 18:51:06 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: ты тож хочеш у шахту?
+2014-01-14 18:51:17 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: да факела нужны
+2014-01-14 18:51:26 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: дай кушу
+2014-01-14 18:51:32 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: у меня эсть стак угля но нужно палки
+2014-01-14 18:51:35 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: пажалуста
+2014-01-14 18:51:38 [CLIENT] [INFO] [CHAT] §4[ClearLag] §cWarning Ground items will be removed in one minute!
+2014-01-14 18:51:49 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bDJ_Jack§3: дай тоже
+2014-01-14 18:52:06 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: я упал кудата
+2014-01-14 18:52:16 [CLIENT] [INFO] [CHAT] DJ_Jack died
+2014-01-14 18:52:21 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: ты че
+2014-01-14 18:52:23 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: вупусти
+2014-01-14 18:52:33 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bDJ_Jack§3: извени сестра
+2014-01-14 18:52:44 [CLIENT] [INFO] [CHAT] §6§6[ClearLag] §aRemoved 5 Entities!
+2014-01-14 18:52:47 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: он хател тебя убить
+2014-01-14 18:53:01 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: неверь ему
+2014-01-14 18:53:06 [CLIENT] [INFO] [CHAT] §eSporbie112 joined the game.
+2014-01-14 18:53:06 [CLIENT] [INFO] [CHAT] §dWelcome Sporbie112§d to the server!
+2014-01-14 18:53:12 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: ты абнаваеш
+2014-01-14 18:53:26 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: ты его хател убить
+2014-01-14 18:53:27 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bDJ_Jack§3: нет я с сестрой играю
+2014-01-14 18:53:28 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: DJ_Jack прости но уже нет
+2014-01-14 18:53:37 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: я иду у шахту потом приму
+2014-01-14 18:53:39 [CLIENT] [INFO] [CHAT] §eSporbie112 left the game.
+2014-01-14 18:53:48 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: а как ты преватеш
+2014-01-14 18:53:53 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: а
+2014-01-14 18:53:57 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: в инете смотри
+2014-01-14 18:54:08 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: ну скажи пажалуста
+2014-01-14 18:54:10 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: можеш помочь?
+2014-01-14 18:54:15 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: да
+2014-01-14 18:54:24 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: ето долго нужно казать чтоб приватить
+2014-01-14 18:54:28 [CLIENT] [INFO] [CHAT] §c[N] §2Place a sign to set the text first.
+2014-01-14 18:54:28 [CLIENT] [INFO] [CHAT] §c[N] §2Place a sign to set the text first.
+2014-01-14 18:54:35 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: а ну ладна
+2014-01-14 18:54:38 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: можеш нарубать дерево
+2014-01-14 18:54:39 [CLIENT] [INFO] [CHAT] §cОшибка:§4 §4Этого набора не существует или не определен.
+2014-01-14 18:54:41 [CLIENT] [INFO] [CHAT] §cОшибка:§4 §4У тебя должно быть разрешение §cessentials.kits.start§4 для получения данного набора.
+2014-01-14 18:54:47 [CLIENT] [INFO] [CHAT] §6Наборы:§r Tools
+2014-01-14 18:54:47 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: да даш тапор
+2014-01-14 18:54:55 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: каменый
+2014-01-14 18:55:02 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: потом дам железний
+2014-01-14 18:55:05 [CLIENT] [INFO] [CHAT] §eDJ_Jack left the game.
+2014-01-14 18:55:07 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: ок
+2014-01-14 18:55:07 [CLIENT] [INFO] [CHAT] §eDJ_Jack joined the game.
+2014-01-14 18:55:16 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bThe1Flame§3: еее иди сюда
+2014-01-14 18:55:22 [CLIENT] [INFO] [CHAT] Sporbie died
+2014-01-14 18:55:22 [CLIENT] [INFO] [CHAT] §c[N] §2Added death waypoint at X:-50 Y:64 Z:306.
+2014-01-14 18:55:24 [CLIENT] [INFO] [CHAT] §7[§fИгрок§7] §b§bfdfggh§3: щас я преду
+2014-01-14 18:56:34 [CLIENT] [INFO] Connecting to 46.174.49.46, 25682
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §c[N] §2This server has online-mode=false!
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §f §f §1 §0 §2 §4§f §f §2 §0 §4 §8§3 §9 §2 §0 §0 §1§3 §9 §2 §0 §0 §2§3 §9 §2 §0 §0 §3§0§0§1§f§e§0§0§2§f§e§0§0§3§4§5§6§7§8§f§e§0§1§0§1§2§f§f§0§1§3§4§f§f§0§1§5§f§f§0§1§6§f§f§0§1§8§9§a§b§f§f§0§1§7§f§f
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §eSporbie joined the game.
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §eЗарегистрируйся - §d/reg ПАРОЛЬ ПОВТОР_ПАРОЛЯ §eили §d/register ПАРОЛЬ ПОВТОР_ПАРОЛЯ
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §bТы новичок на сервере Sky Crafting, Sporbie§d. Удачной игры!!!
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §r§6>>Добро пожаловать на сервер, Sporbie§6!
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §r§6>>Пиши §c/help§6 просмотра доступных команд.
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §r§6>>Сейчас онлайн:§r §cdemosvika, §bAdikanik777, Crafter02, §cm1cs, §aAlbina1999, §bLogan6452, Sporbie
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §r§b>>Пиши /kit starter - набор новичка
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §r§b>>Пиши /warps, чтобы узнать точки телепортов.
+2014-01-14 18:56:35 [CLIENT] [INFO] [CHAT] §r§6>>Удачной игры!
+2014-01-14 18:56:40 [CLIENT] [INFO] [CHAT] §eЗарегистрируйся - §d/reg ПАРОЛЬ ПОВТОР_ПАРОЛЯ §eили §d/register ПАРОЛЬ ПОВТОР_ПАРОЛЯ
+2014-01-14 18:56:46 [CLIENT] [INFO] [CHAT] §eЗарегистрируйся - §d/reg ПАРОЛЬ ПОВТОР_ПАРОЛЯ §eили §d/register ПАРОЛЬ ПОВТОР_ПАРОЛЯ
+2014-01-14 18:56:48 [CLIENT] [INFO] [CHAT] §aУспешная регистрация
+2014-01-14 18:57:29 [CLIENT] [INFO] [CHAT] <§4[§a§lСоздатель§4] §c§cm1cs§2§l> Ну ладно я захожу через свой акк
+2014-01-14 18:57:30 [CLIENT] [INFO] [CHAT] §em1cs left the game.
+2014-01-14 18:57:35 [CLIENT] [INFO] [CHAT] <§4[§a§lСоздатель§4] §c§cdemosvika§2§l> всё
+2014-01-14 18:57:39 [CLIENT] [INFO] [CHAT] <§4[§a§lСоздатель§4] §c§cdemosvika§2§l> я туит
+2014-01-14 18:57:41 [CLIENT] [INFO] [CHAT] <§4[§a§lСоздатель§4] §c§cdemosvika§2§l> тут
+2014-01-14 18:57:47 [CLIENT] [INFO] [CHAT] <§7[§fИгрок§7] §b§bSporbie§3> Админ
+2014-01-14 18:57:50 [CLIENT] [INFO] [CHAT] <§4[§a§lСоздатель§4] §c§cdemosvika§2§l> а
+2014-01-14 18:58:01 [CLIENT] [INFO] [CHAT] <§7[§fИгрок§7] §b§bSporbie§3> Тп меня от спавна далеко
+2014-01-14 18:58:38 [CLIENT] [INFO] [CHAT] §eDarber joined the game.
+2014-01-14 18:58:38 [CLIENT] [INFO] [CHAT] §bТы новичок на сервере Sky Crafting, Darber§d. Удачной игры!!!
+2014-01-14 18:58:48 [CLIENT] [INFO] [CHAT] §ejordibassham joined the game.
+2014-01-14 18:58:54 [CLIENT] [INFO] [CHAT] <§7[§fИгрок§7] §b§bSporbie§3> Тп меня от спавна далеко, АДМИНЫ!
+2014-01-14 18:59:03 [CLIENT] [INFO] [CHAT] §eDarber left the game.
+2014-01-14 18:59:11 [CLIENT] [INFO] [CHAT] §eDarber joined the game.
+2014-01-14 18:59:14 [CLIENT] [INFO] [CHAT] §eDarber left the game.
+2014-01-14 18:59:19 [CLIENT] [INFO] [CHAT] §6Телепортирование...
+2014-01-14 18:59:42 [CLIENT] [INFO] [CHAT] <§7[§fИгрок§7] §b§bSporbie§3> СПС
+2014-01-14 19:00:14 [CLIENT] [INFO] [CHAT] §4У тебя нет прав для выполнения данной команды.
+2014-01-14 19:00:18 [CLIENT] [INFO] [CHAT] §4У тебя нет прав для выполнения данной команды.
+2014-01-14 19:00:48 [CLIENT] [INFO] [CHAT] §eMrFrost joined the game.
+2014-01-14 19:00:48 [CLIENT] [INFO] [CHAT] §d[Server] Adikanik777 я вижу всё что ты пишешь и tpall тебе не разрешен-_-
+2014-01-14 19:00:53 [CLIENT] [INFO] [CHAT] §eAlbina1999 left the game.
+2014-01-14 19:01:00 [CLIENT] [INFO] [CHAT] §eMrFrost left the game.
+2014-01-14 19:01:02 [CLIENT] [INFO] [CHAT] §eMrFrost joined the game.
+2014-01-14 19:01:05 [CLIENT] [INFO] [CHAT] §eMrFrost left the game.
+2014-01-14 19:01:12 [CLIENT] [INFO] [CHAT] §eLogan6452 left the game.
+2014-01-14 19:01:15 [CLIENT] [INFO] [CHAT] <§7[§fИгрок§7] §b§bSporbie§3> Админы, вам нужен хароший программист для сайта?
+2014-01-14 19:01:17 [CLIENT] [INFO] [CHAT] §eAlbina1999 joined the game.
+2014-01-14 19:01:28 [CLIENT] [INFO] [CHAT] §eBensword331 joined the game.
+2014-01-14 19:01:28 [CLIENT] [INFO] [CHAT] §bТы новичок на сервере Sky Crafting, Bensword331§d. Удачной игры!!!
+2014-01-14 19:01:33 [CLIENT] [INFO] [CHAT] §eBensword331 left the game.
+2014-01-14 19:01:37 [CLIENT] [INFO] [CHAT] <§4[§aХелпер§4] §b§bAdikanik777§b> А что мне делать?
+2014-01-14 19:01:42 [CLIENT] [INFO] [CHAT] <§4[§aХелпер§4] §b§bAdikanik777§b> И так скукота
+2014-01-14 19:01:51 [CLIENT] [INFO] [CHAT] <§4[§aХелпер§4] §b§bAdikanik777§b> Сдохну
+2014-01-14 19:01:54 [CLIENT] [INFO] [CHAT] <§4[§aХелпер§4] §b§bAdikanik777§b> Щас!
+2014-01-14 19:03:42 [CLIENT] [INFO] [CHAT] §5§4demosvika§r §5отошел.
+2014-01-14 19:03:55 [CLIENT] [INFO] [CHAT] §eAlbina1999 left the game.
+2014-01-14 19:04:40 [CLIENT] [INFO] [CHAT] §eCrafter02 left the game.
+2014-01-14 19:04:46 [CLIENT] [INFO] [CHAT] §eCrafter02 joined the game.
+2014-01-14 19:04:49 [CLIENT] [INFO] [CHAT] §eCrafter02 left the game.
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:18 [CLIENT] [SEVERE] Item entity 3566273 has no item?!
+2014-01-14 19:05:33 [CLIENT] [INFO] [CHAT] §elal joined the game.
+2014-01-14 19:06:34 [CLIENT] [INFO] [CHAT] §eCrafter02 joined the game.
+2014-01-14 19:06:35 [CLIENT] [INFO] [CHAT] §ePachein joined the game.
+2014-01-14 19:06:35 [CLIENT] [INFO] [CHAT] §bТы новичок на сервере Sky Crafting, Pachein§d. Удачной игры!!!
+2014-01-14 19:07:01 [CLIENT] [INFO] [CHAT] <§7[§fИгрок§7] §b§bjordibassham§3> кто  в друзья
+2014-01-14 19:07:44 [CLIENT] [INFO] [CHAT] Sporbie was blown up by Creeper
+2014-01-14 19:07:44 [CLIENT] [INFO] [CHAT] §c[N] §2Added death waypoint at X:1069 Y:46 Z:1117.
+2014-01-14 19:08:14 [CLIENT] [INFO] Connecting to 144.76.234.194, 25595
+2014-01-14 19:08:15 [CLIENT] [INFO] [CHAT] §c[N] §2This server has online-mode=false!
+2014-01-14 19:08:15 [CLIENT] [INFO] [CHAT] §f §f §1 §0 §2 §4§f §f §2 §0 §4 §8§3 §9 §2 §0 §0 §1§3 §9 §2 §0 §0 §2§3 §9 §2 §0 §0 §3§0§0§1§f§e§0§0§2§f§e§0§0§3§4§5§6§7§8§f§e§0§1§0§1§2§f§f§0§1§3§4§f§f§0§1§5§f§f§0§1§6§f§f§0§1§8§9§a§b§f§f§0§1§7§f§f
+2014-01-14 19:08:15 [CLIENT] [INFO] [CHAT] §2Зарегистрируйтесь §c"/register <пароль>"
+2014-01-14 19:08:15 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §c§lПродам сборку сервера за 200 рублей
+2014-01-14 19:08:20 [CLIENT] [INFO] [CHAT] §2Зарегистрируйтесь §c"/register <пароль>"
+2014-01-14 19:08:25 [CLIENT] [INFO] [CHAT] §2Зарегистрируйтесь §c"/register <пароль>"
+2014-01-14 19:08:29 [CLIENT] [INFO] [CHAT] §2Вы успешно зарегистрировались! §a§lБонус §c/kit start, /kit bonus §b+ §2§l00.000$
+2014-01-14 19:08:35 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §b§lНа сервере есть MobArena надо писать/ma j
+2014-01-14 19:08:55 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §eГлавный админ сервера Kaskein Его скайп:nikitka010101
+2014-01-14 19:09:15 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §3§lНа сервере есть SurvialGames надо писать/sg join
+2014-01-14 19:09:35 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §c§lЧтобы принять приглашение клана пишите /clan join название клана
+2014-01-14 19:09:55 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §a§l§oЧтобы просмотреть возможности платных услуг(доната) §a§l§o пиши §6§l§o/warp info
+2014-01-14 19:10:15 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §7[§2Акция§7] §c§LКреатив §a§lнавсегда стоимость §9§l100 рублей §a§lписать в скайп §9§lnikitka010101
+2014-01-14 19:10:35 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §7[§dДонат§7] §6§lВип§7[§660р§7],§5§lПремиум§7[§690р§7], §2§lКреатив§7[§6120р§7], §3§lАдмин§7[§6250р§7], §9§lМодератор§7[§6200р§7], §4§lLord§7[§6500р§7] §a§lЧтобы купить пиши в §2§lSkype: §e§onikitka010101
+2014-01-14 19:10:38 [CLIENT] [INFO] [CHAT] §cYour influence is now -1/10.
+2014-01-14 19:10:38 [CLIENT] [INFO] [CHAT] §cYour influence is now -2/10.
+2014-01-14 19:10:38 [CLIENT] [INFO] [CHAT] §c[N] §2Added death waypoint at X:-511 Y:71 Z:921.
+2014-01-14 19:10:53 [CLIENT] [INFO] [CHAT] §6Держи свой набор§c bonus§6.
+2014-01-14 19:10:55 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 Всех ждём в нашей официальной группе [В]контакте! 
+2014-01-14 19:10:55 [CLIENT] [INFO] [CHAT]  §7 http://vk.com/AmdushWorld
+2014-01-14 19:10:59 [CLIENT] [INFO] [CHAT] §6Держи свой набор§c start§6.
+2014-01-14 19:11:15 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §5§lТебе сделать надо книгу с пером и написать /warp elka и кинуть письмо в воронку
+2014-01-14 19:11:35 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §8[§3Локальный§8] §7чат работает на 100 блоков, чтобы писать в общий чат, введите !§8(§bcвосклицательный знак§8) §7перед текстом
+2014-01-14 19:11:52 [CLIENT] [INFO] [CHAT] §4Ты можешь получить его через§c 9 минут 1 секунда§4.
+2014-01-14 19:11:55 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §a§lВсе платные услуги на §c§lНавсегда 
+2014-01-14 19:12:15 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §c§lЧтобы создать клан пишите /clan create название клана
+2014-01-14 19:12:35 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §5§lМы проводим акцию напиши письмо Деду морозу!
+2014-01-14 19:12:55 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §e§lНаша группа вк http://vk.com/amdushworld вступи чтоб быть вкурсе о конкурсах!
+2014-01-14 19:12:57 [CLIENT] [INFO] [CHAT] §4Вы не можете разбивать блоки на этой территории.
+2014-01-14 19:13:01 [CLIENT] [INFO] [CHAT] §4Сундук защищён магией.
+2014-01-14 19:13:01 [CLIENT] [INFO] [CHAT] §4Сундук защищён магией.
+2014-01-14 19:13:15 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §c§lЧтобы пригласить друга в клан пишите /clan invite ник игрока
+2014-01-14 19:13:35 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §c§lПродам сборку сервера за 200 рублей
+2014-01-14 19:13:55 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §b§lНа сервере есть MobArena надо писать/ma j
+2014-01-14 19:14:15 [CLIENT] [INFO] [CHAT] §9[§3AmdushWorld§9]§7 §eГлавный админ сервера Kaskein Его скайп:nikitka010101
+2014-01-14 19:15:14 [CLIENT] [INFO] Connecting to 5.152.192.170, 25568
+2014-01-14 19:15:14 [CLIENT] [INFO] [CHAT] §c[N] §2This server has online-mode=false!
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §0[§bThis server uses §3Parkour §b2.3§0]
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §f §f §1 §0 §2 §4§f §f §2 §0 §4 §8§0§1§0§1§2§f§f§0§1§3§4§f§f§0§1§5§f§f§0§1§6§f§f§0§1§8§9§a§b§f§f§0§1§7§f§f§3 §9 §2 §0 §0 §1§3 §9 §2 §0 §0 §2§3 §9 §2 §0 §0 §3§0§0§1§f§e§0§0§2§f§e§0§0§3§4§5§6§7§8§f§e
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §eSporbie joined the game.
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §eЗарегистрируйся - §d/reg ПАРОЛЬ ПОВТОР_ПАРОЛЯ §eили §d/register ПАРОЛЬ ПОВТОР_ПАРОЛЯ
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §dWelcome Sporbie§d to the server!
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §r§6Welcome, Sporbie§6!
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §r§6Type §c/help§6 for a list of commands.
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §r§6Currently online:§r §5ivan335, Sporbie
+2014-01-14 19:15:15 [CLIENT] [INFO] [CHAT] §6Нет новых писем.
+2014-01-14 19:15:20 [CLIENT] [INFO] [CHAT] §eЗарегистрируйся - §d/reg ПАРОЛЬ ПОВТОР_ПАРОЛЯ §eили §d/register ПАРОЛЬ ПОВТОР_ПАРОЛЯ
+2014-01-14 19:15:25 [CLIENT] [INFO] [CHAT] §eЗарегистрируйся - §d/reg ПАРОЛЬ ПОВТОР_ПАРОЛЯ §eили §d/register ПАРОЛЬ ПОВТОР_ПАРОЛЯ
+2014-01-14 19:15:30 [CLIENT] [INFO] [CHAT] §eЗарегистрируйся - §d/reg ПАРОЛЬ ПОВТОР_ПАРОЛЯ §eили §d/register ПАРОЛЬ ПОВТОР_ПАРОЛЯ
+2014-01-14 19:15:31 [CLIENT] [INFO] [CHAT] §aУспешная регистрация
+2014-01-14 19:16:04 [CLIENT] [INFO] [CHAT] §4You don't have permission for this area.
+2014-01-14 19:17:29 [CLIENT] [INFO] [CHAT] §cОшибка:§4 §4У тебя должно быть разрешение §cessentials.kits.starter§4 для получения данного набора.
+2014-01-14 19:17:32 [CLIENT] [INFO] [CHAT] §6Наборы:§r Start Tools
+2014-01-14 19:17:37 [CLIENT] [INFO] [CHAT] §6Выдал набор§c start§6 игроку Sporbie§.
+2014-01-14 19:17:37 [CLIENT] [INFO] [CHAT] §6Передан набор§c start§6. 
+2014-01-14 19:17:43 [CLIENT] [INFO] [CHAT] §6Выдал набор§c tools§6 игроку Sporbie§.
+2014-01-14 19:17:43 [CLIENT] [INFO] [CHAT] §6Передан набор§c tools§6. 
+2014-01-14 19:18:13 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Ау
+2014-01-14 19:18:24 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Иван?
+2014-01-14 19:18:38 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Иваан!
+2014-01-14 19:18:49 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Иван
+2014-01-14 19:19:09 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Ваня
+2014-01-14 19:19:19 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Иван
+2014-01-14 19:19:28 [CLIENT] [INFO] [CHAT] §6Запрос отправлен игроку§c §5ivan335§6.
+2014-01-14 19:20:11 [CLIENT] [INFO] [CHAT] §6Запрос отправлен игроку§c §5ivan335§6.
+2014-01-14 19:21:26 [CLIENT] [INFO] [CHAT] §6Запрос отправлен игроку§c §5ivan335§6.
+2014-01-14 19:21:53 [CLIENT] [INFO] [CHAT] §6Запрос отправлен игроку§c §5ivan335§6.
+2014-01-14 19:21:54 [CLIENT] [INFO] [CHAT] §6Запрос отправлен игроку§c §5ivan335§6.
+2014-01-14 19:21:55 [CLIENT] [INFO] [CHAT] §6Запрос отправлен игроку§c §5ivan335§6.
+2014-01-14 19:21:55 [CLIENT] [INFO] [CHAT] §c§5ivan335 §6принял твой запрос на телепортирование.
+2014-01-14 19:21:55 [CLIENT] [INFO] [CHAT] §6Запрос отправлен игроку§c §5ivan335§6.
+2014-01-14 19:22:11 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Чего ты молчал?
+2014-01-14 19:22:24 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> отходил
+2014-01-14 19:22:30 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Ясно
+2014-01-14 19:22:45 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Что чтроишь?
+2014-01-14 19:23:25 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Иван, а гл добрый?
+2014-01-14 19:23:31 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> да
+2014-01-14 19:23:50 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Блин а кроме скайпа как с ним связаться?
+2014-01-14 19:24:02 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> а тебе зачем
+2014-01-14 19:24:14 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Я могу сделать сайт для его сервера
+2014-01-14 19:24:40 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> серв через 2 недели офф
+2014-01-14 19:24:51 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Что офф?
+2014-01-14 19:25:03 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> выключиться
+2014-01-14 19:25:10 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Зачем?
+2014-01-14 19:25:36 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Попонятнее, кто когда и зачем?
+2014-01-14 19:26:20 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> потомучто не кто не хочет играть
+2014-01-14 19:26:33 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Я хочу
+2014-01-14 19:26:48 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> я и пиарить могу
+2014-01-14 19:26:59 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> максимум пять чел на серве было
+2014-01-14 19:27:03 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> и строить
+2014-01-14 19:27:18 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> у него вк есть?
+2014-01-14 19:27:18 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> пиар без полезно
+2014-01-14 19:27:30 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> незн
+2014-01-14 19:28:00 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> на 1.7.2 переноситесь
+2014-01-14 19:28:44 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> толку мало
+2014-01-14 19:29:14 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> больно дорого серв содержать если не кто не игрет
+2014-01-14 19:29:25 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> играет
+2014-01-14 19:29:47 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Дай ужочку
+2014-01-14 19:29:54 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> удочку
+2014-01-14 19:30:13 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Дай ужочку
+2014-01-14 19:30:20 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Дай удочку
+2014-01-14 19:30:26 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> дал
+2014-01-14 19:32:34 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Ты всегда всех так дастаёшь?
+2014-01-14 19:34:40 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Мать
+2014-01-14 19:34:41 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:34:47 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:34:59 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Ха ллол
+2014-01-14 19:36:01 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> тП НА РОЗООВЫЙ МЕНЯ
+2014-01-14 19:36:35 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к spawn§6.
+2014-01-14 19:36:54 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к spawn§6.
+2014-01-14 19:37:00 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к spawn§6.
+2014-01-14 19:37:11 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> ))))
+2014-01-14 19:37:30 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Ты всех вот так дастаёшь и вот все уходят
+2014-01-14 19:37:39 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> нет
+2014-01-14 19:37:46 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> тебя только
+2014-01-14 19:37:50 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> тебя только
+2014-01-14 19:37:54 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Зачем?
+2014-01-14 19:38:15 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> не знаю скучно
+2014-01-14 19:38:39 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Гм о
+2014-01-14 19:38:50 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Гм 0
+2014-01-14 19:38:57 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Гм 0!
+2014-01-14 19:39:18 [CLIENT] [INFO] [CHAT] Sporbie was slain by ivan335 using ivan335
+2014-01-14 19:39:18 [CLIENT] [INFO] [CHAT] §c[N] §2Added death waypoint at X:-2386 Y:112 Z:-756.
+2014-01-14 19:39:33 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> вот и все
+2014-01-14 19:39:33 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Дай такой-же сет, что и у тебя
+2014-01-14 19:39:44 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> ххаха
+2014-01-14 19:40:04 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Тебе же скучно
+2014-01-14 19:40:19 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к spawn§6.
+2014-01-14 19:40:40 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:41:05 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Далеко под спавном - алмазнаб руда
+2014-01-14 19:41:19 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> а я не знал
+2014-01-14 19:41:31 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> как будто
+2014-01-14 19:41:38 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> и кругом железо
+2014-01-14 19:41:50 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> могу руку пожать
+2014-01-14 19:41:56 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> и крипер с пауком
+2014-01-14 19:42:17 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Сундук
+2014-01-14 19:42:46 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:43:48 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:47:11 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:47:35 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> всё
+2014-01-14 19:47:41 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Я ухожу
+2014-01-14 19:48:03 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:48:10 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:48:16 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> ПОКА
+2014-01-14 19:48:29 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.48.29.png
+2014-01-14 19:48:32 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.48.31.png
+2014-01-14 19:48:33 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.48.33.png
+2014-01-14 19:49:11 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.49.11.png
+2014-01-14 19:49:13 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.49.12.png
+2014-01-14 19:49:23 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> сКРИНЫ ЕСТЬ
+2014-01-14 19:49:29 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> чего
+2014-01-14 19:49:30 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Скину их гл
+2014-01-14 19:49:42 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> скилова
+2014-01-14 19:49:49 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> скиловай
+2014-01-14 19:49:58 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> скидовай
+2014-01-14 19:50:11 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> я тебе разрешаю
+2014-01-14 19:50:23 [CLIENT] [INFO] [CHAT] §4Сундук защищён магией.
+2014-01-14 19:50:32 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> думаешь он меня забанет
+2014-01-14 19:50:57 [CLIENT] [INFO] [CHAT] §4You don't have permission for this area.
+2014-01-14 19:50:58 [CLIENT] [INFO] [CHAT] §4You don't have permission for this area.
+2014-01-14 19:52:11 [CLIENT] [INFO] [CHAT] §eMark_888888_ joined the game.
+2014-01-14 19:52:19 [CLIENT] [INFO] [CHAT] §eMark_888888_ left the game.
+2014-01-14 19:53:15 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:53:21 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.53.20.png
+2014-01-14 19:53:55 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:54:05 [CLIENT] [INFO] [CHAT] §eMark_888888_ joined the game.
+2014-01-14 19:54:11 [CLIENT] [INFO] [CHAT] Sporbie was blown up by Creeper
+2014-01-14 19:54:11 [CLIENT] [INFO] [CHAT] §c[N] §2Added death waypoint at X:-1115 Y:68 Z:1424.
+2014-01-14 19:54:15 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.54.14.png
+2014-01-14 19:54:20 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 19:55:36 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Mark_888888_§a> СКАЙП У КАВО ЕСТТЬ
+2014-01-14 19:55:47 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> у меня
+2014-01-14 19:55:51 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> §2Mark_888888_§a ТУТ НЕАДЕКВАТНЫЙ ПРИДУРОК
+2014-01-14 19:55:55 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Mark_888888_§a> ДАВАЙ ДРУЖИТЬ
+2014-01-14 19:56:01 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> кто
+2014-01-14 19:56:07 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Ты!
+2014-01-14 19:56:25 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> а бан не хочешь
+2014-01-14 19:56:28 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Mark_888888_§a> НА МОЙ mark25033
+2014-01-14 19:56:39 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Тебе капна скрины есть!
+2014-01-14 19:56:40 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> за придурка
+2014-01-14 19:56:48 [CLIENT] [INFO] [CHAT] Mark_888888_ burned to death
+2014-01-14 19:56:56 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> ой напугала
+2014-01-14 19:57:05 [CLIENT] [INFO] [CHAT] <§e[§3Creative§e] §5§5ivan335§a> как страшно
+2014-01-14 19:57:06 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Mark_888888_§a> НА МОЙ mark25033
+2014-01-14 19:57:26 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Mark_888888_§a> НА МОЙ СКАЙП mark25033
+2014-01-14 19:57:30 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> §2Mark_888888_§a ПОШЛИ ОТ СЮДА! ОН НЕ АДЕКВАТ!
+2014-01-14 19:57:51 [CLIENT] [INFO] [CHAT] §4Сундук защищён магией.
+2014-01-14 19:57:51 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Mark_888888_§a> НА МОЙ СКАЙП mark25033
+2014-01-14 19:59:02 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Mark_888888_§a> TT
+2014-01-14 19:59:11 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> оН ЯВНО ИДИОТ КАКОЙ-ТО!
+2014-01-14 19:59:44 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к spawn§6.
+2014-01-14 19:59:54 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_19.59.54.png
+2014-01-14 19:59:57 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к spawn§6.
+2014-01-14 20:00:01 [CLIENT] [INFO] [CHAT] Saved screenshot as 2014-01-14_20.00.00.png
+2014-01-14 20:00:34 [CLIENT] [INFO] [CHAT] §c§5ivan335§6 телепортировал тебя к §5ivan335§6.
+2014-01-14 20:00:43 [CLIENT] [INFO] [CHAT] Mark_888888_ was slain by Sporbie
+2014-01-14 20:00:49 [CLIENT] [INFO] [CHAT] §eMark_888888_ left the game.
+2014-01-14 20:01:23 [CLIENT] [INFO] [CHAT] §eMark_888888_ joined the game.
+2014-01-14 20:01:34 [CLIENT] [INFO] [CHAT] <§7[§aИгрок§7] §2§2Sporbie§a> Теперь оставайся один! Гнойный пидорас
+2014-01-14 20:58:01 [CLIENT] [INFO] Stopping!
+2014-01-19 15:53:41 [CLIENT] [INFO] Setting user: 
+2014-01-19 15:53:41 [CLIENT] [INFO] LWJGL Version: 2.4.2
+2014-01-19 15:53:48 [CLIENT] [INFO] Found animation info for: textures/blocks/lava_flow.txt
+2014-01-19 15:53:48 [CLIENT] [INFO] Found animation info for: textures/blocks/water_flow.txt
+2014-01-19 15:53:48 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_0.txt
+2014-01-19 15:53:48 [CLIENT] [INFO] Found animation info for: textures/blocks/fire_1.txt
+2014-01-19 15:53:48 [CLIENT] [INFO] Found animation info for: textures/blocks/lava.txt
+2014-01-19 15:53:48 [CLIENT] [INFO] Found animation info for: textures/blocks/portal.txt
+2014-01-19 15:53:48 [CLIENT] [INFO] Found animation info for: textures/blocks/water.txt
+2014-01-19 15:53:49 [CLIENT] [INFO] Found animation info for: textures/items/clock.txt
+2014-01-19 15:53:49 [CLIENT] [INFO] Found animation info for: textures/items/compass.txt
+2014-01-19 15:54:06 [CLIENT] [INFO] Stopping!

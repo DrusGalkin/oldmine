@@ -1,0 +1,40 @@
+
+OptiFine_1.4.6_HD_A3
+Tue Feb 03 01:31:06 MSK 2026
+OS: Windows 8 (amd64) version 6.2
+Java: 1.7.0_21, Oracle Corporation
+VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+LWJGL: 2.4.2
+OpenGL: Intel(R) Iris(R) Xe Graphics version 4.6.0 - Build 32.0.101.7040, Intel
+OpenGL Version: 4.0
+OpenGL Fancy fog: Not available (GL_NV_fog_distance)
+TextureFX registered: bdj@774293ac, texId: 7, index: 237
+TextureFX registered: bdm@66688800, texId: 7, index: 205
+TextureFX registered: bdk@58b8ec86, texId: 7, index: 14
+TextureFX registered: bdf@4be699b0, texId: 8, index: 54
+TextureFX registered: bde@1460d4b0, texId: 8, index: 70
+TextureFX registered: bdl@2d4bc050, texId: 7, index: 206
+TextureFX registered: bdi@483edb6b, texId: 7, index: 238
+TextureFX registered: bdh@16b772db, texId: 7, index: 31
+TextureFX registered: bdh@65d59383, texId: 7, index: 47
+TextureFX removed: bdj@774293ac, texId: 7, index: 237
+TextureFX registered: TextureHDLavaFX@6490e556, texId: 7, index: 237
+TextureFX removed: bdm@66688800, texId: 7, index: 205
+TextureFX registered: TextureHDWaterFX@64c0a4ae, texId: 7, index: 205
+TextureFX removed: bdk@58b8ec86, texId: 7, index: 14
+TextureFX registered: TextureHDPortalFX@237bcf2f, texId: 7, index: 14
+TextureFX removed: bdl@2d4bc050, texId: 7, index: 206
+TextureFX registered: TextureHDWaterFlowFX@155f28dc, texId: 7, index: 206
+TextureFX removed: bdi@483edb6b, texId: 7, index: 238
+TextureFX registered: TextureHDLavaFlowFX@1a738e7a, texId: 7, index: 238
+TextureFX removed: bdh@16b772db, texId: 7, index: 31
+TextureFX registered: TextureHDFlamesFX@188ef927, texId: 7, index: 31
+TextureFX removed: bdh@65d59383, texId: 7, index: 47
+TextureFX registered: TextureHDFlamesFX@2e06de7e, texId: 7, index: 47
+TextureFX removed: bdf@4be699b0, texId: 8, index: 54
+TextureFX registered: TextureHDCompassFX@6f2c94cc, texId: 8, index: 54
+TextureFX removed: bde@1460d4b0, texId: 8, index: 70
+TextureFX registered: TextureHDWatchFX@49a01787, texId: 8, index: 70
+Loading custom colors: /misc/grasscolor.png
+Loading custom colors: /misc/foliagecolor.png
+Class not present: LightCache

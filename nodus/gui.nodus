@@ -1,0 +1,92 @@
+#Do not edit anything in this file. It will screw up Nodus.
+#This file stores all the Nodus GUI information.
+NContainerClick¶534¶120¶World¶true
+NComponentClickItem¶AutoEgg¶autoegg toggle
+NComponentClickItem¶AutoFish¶autofish toggle
+NComponentClickItem¶NoSwing¶noswing toggle
+NComponentClickItem¶CaveFinder¶cavefinder toggle
+NComponentClickItem¶ChestFinder¶chestfinder toggle
+NComponentClickItem¶Day¶day toggle
+NComponentClickItem¶ESP¶esp toggle
+NComponentClickItem¶FullBright¶fullbright toggle
+NComponentClickItem¶NoRender¶norender toggle
+NComponentClickItem¶NoSlowdown ¶noslowdown toggle
+NComponentClickItem¶Notifications¶notifications toggle
+NComponentClickItem¶Timer¶timer toggle
+NComponentClickItem¶Tracers¶tracers toggle
+NComponentClickItem¶Wallhack¶wallhack toggle
+NComponentClickItem¶Waypoints¶waypoints toggle
+NComponentClickItem¶Weather¶weather toggle
+NComponentClickItem¶XRay¶xray toggle
+NContainerClick¶130¶12¶Movement¶true
+NComponentClickItem¶AutoWalk¶autowalk toggle
+NComponentClickItem¶Derp¶derp toggle
+NComponentClickItem¶Fly¶fly toggle
+NComponentClickItem¶Freecam¶freecam toggle
+NComponentClickItem¶HighJump¶highjump toggle
+NComponentClickItem¶NoFall¶nofall toggle
+NComponentClickItem¶Sneak¶sneak toggle
+NComponentClickItem¶Spider¶spider toggle
+NComponentClickItem¶Sprint¶sprint toggle
+NComponentClickItem¶Step¶step toggle
+NComponentClickItem¶Water Walking¶water toggle
+NContainerClick¶12¶143¶Building¶false
+NComponentClickItem¶AutoSign¶autosign toggle
+NComponentClickItem¶AutoTool¶autotool toggle
+NComponentClickItem¶AutoMine¶automine toggle
+NComponentClickItem¶FastBreak¶fastbreak toggle
+NComponentClickItem¶FastPlace¶fastplace toggle
+NComponentClickItem¶Build¶build toggle
+NComponentClickItem¶Nuker¶nuker toggle
+NContainerEnabled¶4¶76¶false
+NContainerTab¶0¶11¶false
+NComponentTab¶Player
+NComponentTabItem¶AutoEgg¶autoegg toggle
+NComponentTabItem¶AutoEnchant¶autoenchant toggle
+NComponentTabItem¶AutoFish¶autofish toggle
+NComponentTabItem¶AutoSign¶autosign toggle
+NComponentTabItem¶AutoTool¶autotool toggle
+NComponentTabItem¶AutoMine¶automine toggle
+NComponentTabItem¶Derp¶derp toggle
+NComponentTabItem¶FastBreak¶fastbreak toggle
+NComponentTabItem¶FastPlace¶fastplace toggle
+NComponentTabItem¶Fly¶fly toggle
+NComponentTabItem¶Freecam¶freecam toggle
+NComponentTabItem¶HighJump¶highjump toggle
+NComponentTabItem¶NoFall¶nofall toggle
+NComponentTabItem¶NoSwing¶noswing toggle
+NComponentTabItem¶Sneak¶sneak toggle
+NComponentTabItem¶Spider¶spider toggle
+NComponentTabItem¶Sprint¶sprint toggle
+NComponentTabItem¶Step¶step toggle
+NComponentTab¶World
+NComponentTabItem¶Build¶build toggle
+NComponentTabItem¶CaveFinder¶cavefinder toggle
+NComponentTabItem¶ChestFinder¶chestfinder toggle
+NComponentTabItem¶Day¶day toggle
+NComponentTabItem¶ESP¶esp toggle
+NComponentTabItem¶FullBright¶fullbright toggle
+NComponentTabItem¶NoRender¶norender toggle
+NComponentTabItem¶No Slowdown¶noslowdown toggle
+NComponentTabItem¶Nuker¶nuker toggle
+NComponentTabItem¶Radar¶radar toggle
+NComponentTabItem¶Notifications¶notifications toggle
+NComponentTabItem¶Timer¶timer toggle
+NComponentTabItem¶Tracers¶tracers toggle
+NComponentTabItem¶Wallhack¶wallhack toggle
+NComponentTabItem¶Water¶water toggle
+NComponentTabItem¶Waypoints¶waypoints toggle
+NComponentTabItem¶Weather¶weather toggle
+NComponentTabItem¶Xray¶xray toggle
+NComponentTab¶Combat
+NComponentTabItem¶Aimbot¶aimbot toggle
+NComponentTabItem¶Aimbot Attack¶aimbot attack
+NComponentTabItem¶Bow Aimbot¶bowaimbot toggle
+NComponentTabItem¶Click Aimbot¶clickaimbot toggle
+NComponentTabItem¶Forcefield¶forcefield toggle
+NContainerRadar¶10¶290¶false
+NContainerCoordinates¶10¶267¶false
+NContainerClick¶429¶7¶Combat¶false
+NComponentClickItem¶BowAimbot¶bowaimbot toggle
+NComponentClickItem¶ClickAimbot¶clickaimbot toggle
+NComponentClickItem¶ForceField¶forcefield toggle

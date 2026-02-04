@@ -1,0 +1,1 @@
+#This is the default accounts file. Format is user:pass or email:pass

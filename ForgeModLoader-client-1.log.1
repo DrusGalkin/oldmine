@@ -1,0 +1,92 @@
+2026-02-02 02:33:52 [INFO] [ForgeModLoader] Forge Mod Loader version missing.missing.missing.missing for Minecraft missing loading
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] All core mods are successfully located
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Discovering coremods
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Found library file argo-2.25.jar present and correct in lib dir
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Found library file guava-12.0.1.jar present and correct in lib dir
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Found library file asm-all-4.0.jar present and correct in lib dir
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Found library file bcprov-jdk15on-147.jar present and correct in lib dir
+2026-02-02 02:33:52 [SEVERE] [ForgeModLoader] A critical problem occured registering the ASM transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer
+java.lang.IllegalArgumentException: resource fml_at.cfg not found.
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:119)
+	at com.google.common.io.Resources.getResource(Resources.java:157)
+	at cpw.mods.fml.common.asm.transformers.AccessTransformer.readMapFile(AccessTransformer.java:94)
+	at cpw.mods.fml.common.asm.transformers.AccessTransformer.<init>(AccessTransformer.java:81)
+	at cpw.mods.fml.common.asm.transformers.AccessTransformer.<init>(AccessTransformer.java:77)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.registerTransformer(RelaunchClassLoader.java:77)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:238)
+	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+2026-02-02 02:33:52 [SEVERE] [ForgeModLoader] A critical problem occured registering the ASM transformer class cpw.mods.fml.common.asm.transformers.MarkerTransformer
+java.lang.IllegalArgumentException: resource fml_marker.cfg not found.
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:119)
+	at com.google.common.io.Resources.getResource(Resources.java:157)
+	at cpw.mods.fml.common.asm.transformers.MarkerTransformer.readMapFile(MarkerTransformer.java:55)
+	at cpw.mods.fml.common.asm.transformers.MarkerTransformer.<init>(MarkerTransformer.java:42)
+	at cpw.mods.fml.common.asm.transformers.MarkerTransformer.<init>(MarkerTransformer.java:38)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.registerTransformer(RelaunchClassLoader.java:77)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:238)
+	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+2026-02-02 02:33:52 [SEVERE] [ForgeModLoader] A critical problem occured registering the ASM transformer class net.minecraftforge.transformers.ForgeAccessTransformer
+java.lang.IllegalArgumentException: resource forge_at.cfg not found.
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:119)
+	at com.google.common.io.Resources.getResource(Resources.java:157)
+	at cpw.mods.fml.common.asm.transformers.AccessTransformer.readMapFile(AccessTransformer.java:94)
+	at cpw.mods.fml.common.asm.transformers.AccessTransformer.<init>(AccessTransformer.java:81)
+	at net.minecraftforge.transformers.ForgeAccessTransformer.<init>(ForgeAccessTransformer.java:11)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.registerTransformer(RelaunchClassLoader.java:77)
+	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:238)
+	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Running coremod plugins
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Running coremod plugin FMLCorePlugin
+2026-02-02 02:33:52 [SEVERE] [ForgeModLoader] FML appears to be missing any signature data. This is not a good thing
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Coremod plugin FMLCorePlugin run successfully
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Running coremod plugin FMLForgePlugin
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Coremod plugin FMLForgePlugin run successfully
+2026-02-02 02:33:52 [FINEST] [ForgeModLoader] Validating minecraft
+2026-02-02 02:33:52 [INFO] [STDOUT] A CRITICAL PROBLEM OCCURED INITIALIZING MINECRAFT - LIKELY YOU HAVE AN INCORRECT VERSION FOR THIS FML
+2026-02-02 02:34:50 [INFO] [STDERR] Exception in thread "main" java.lang.RuntimeException: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:175)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.relaunchClient(FMLRelauncher.java:92)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.handleClientRelaunch(FMLRelauncher.java:26)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at net.minecraft.client.Minecraft.main(Minecraft.java:2235)
+2026-02-02 02:34:50 [INFO] [STDERR] Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:291)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.FMLRelauncher.setupHome(FMLRelauncher.java:155)
+2026-02-02 02:34:50 [INFO] [STDERR] 	... 3 more
+2026-02-02 02:34:50 [INFO] [STDERR] Caused by: java.lang.reflect.InvocationTargetException
+2026-02-02 02:34:50 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at java.lang.reflect.Method.invoke(Unknown Source)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.relauncher.RelaunchLibraryManager.handleLaunch(RelaunchLibraryManager.java:283)
+2026-02-02 02:34:50 [INFO] [STDERR] 	... 4 more
+2026-02-02 02:34:50 [INFO] [STDERR] Caused by: java.lang.IllegalAccessError: tried to access class b from class cpw.mods.fml.common.Loader
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.common.Loader.<init>(Loader.java:172)
+2026-02-02 02:34:50 [INFO] [STDERR] 	at cpw.mods.fml.common.Loader.instance(Loader.java:151)
+2026-02-02 02:34:50 [INFO] [STDERR] 	... 9 more

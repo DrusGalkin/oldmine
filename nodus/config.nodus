@@ -1,0 +1,63 @@
+#This is the Nodus config file.
+#You shouldn't need to edit it directly.
+first-run¶false
+client-enabled¶true
+
+#Bind Settings
+bind-gui¶21
+bind-console¶22
+bind-up¶200
+bind-down¶208
+bind-expand¶205
+bind-collapse¶203
+bind-enter¶28
+
+#GUI Settings
+gui-ttf¶false
+gui-ttf-font¶Arial Bold 17
+gui-click¶true
+gui-keyboard¶true
+gui-coordinates¶true
+gui-enabled¶true
+gui-radar¶true
+gui-rearview¶false
+
+#Color Settings
+color-primary¶c
+color-secondary¶2
+color-chest¶a
+color-default¶f
+color-sneaking¶c
+color-friend¶a
+color-enemy¶4
+color-mob-passive¶d
+color-mob-agressive¶5
+
+#Mod Settings
+aimbot-mode¶0
+autoegg-amount¶20
+autoenchant-level¶0
+bowaimbot-mode¶0
+build-mode¶0
+derp-mode¶0
+esp-mode¶0
+fastbreak-mode¶0
+flood-speed¶50
+fly-mode¶0
+fly-speed¶1.0
+forcefield-mode¶0
+health-command¶chat /spawn
+health-level¶17
+jump-height¶2.0
+norender-mode¶0
+radar-mode¶1
+sneak-mode¶0
+sprint-mode¶0
+step-height¶1.0
+timer-speed¶2.0
+tracer-mode¶0
+xray-mode¶Normal
+xray-opacity¶0
+block-esp¶54,a¶52,c¶57,b¶56,b
+steal-list¶17
+message-stack¶true

@@ -1,0 +1,13 @@
+enable:true
+enablemp:true
+itemsonly:false
+give-command:/give {0} {1} {2} {3}
+key:o
+save-name1:1
+save-name2:2
+save-name3:3
+save-name4:4
+save-name5:5
+save-name6:6
+save-name7:7
+replace-items:true

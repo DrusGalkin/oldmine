@@ -1,0 +1,41 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 19.01.14 16:18
+Description: Failed to start game
+
+java.nio.charset.UnsupportedCharsetException: windows-125
+	at java.nio.charset.Charset.forName(Unknown Source)
+	at bey.<init>(GuiMainMenu.java:70)
+	at net.minecraft.client.Minecraft.a(Minecraft.java:477)
+	at asq.a(SourceFile:56)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:744)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 8 (x86) version 6.2
+	Java Version: 1.7.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) Client VM (mixed mode), Oracle Corporation
+	Memory: 35839192 bytes (34 MB) / 83431424 bytes (79 MB) up to 1046937600 bytes (998 MB)
+	JVM Flags: 4 total; -Xmx1024m -Xnoclassgc -XX:+AggressiveOpts -Xincgc
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v7.26 FML v4.7.4.520 Minecraft Forge 6.6.0.497 Optifine OptiFine_1.4.6_HD_A3 4 mods loaded, 4 mods active
+	mcp [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	FML [Forge Mod Loader] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	Forge [Minecraft Forge] (coremods) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	mod_TooManyItems [mod_TooManyItems] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available
+	LWJGL: 2.4.2
+	OpenGL: AMD Radeon HD 7700 Series GL version 4.2.11931 Compatibility Profile Context, ATI Technologies Inc.
+	Is Modded: Definitely; Client brand changed to 'forge,fml'
+	Type: Client (map_client.txt)
+	Texture Pack: Default
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null
