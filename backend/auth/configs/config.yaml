@@ -1,0 +1,9 @@
+http:
+  port: 8123
+  timeout:  3m
+  sess_ttl: 30m
+  absolute_sess_ttl: 24h
+  shutdown_timeout: 10s
+grpc:
+  host: "localhost"
+  port: 50051

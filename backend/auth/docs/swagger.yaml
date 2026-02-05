@@ -1,0 +1,150 @@
+definitions:
+  dto.ErrorResponse:
+    properties:
+      error:
+        type: string
+    type: object
+  dto.LoginRequest:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    type: object
+  dto.RegisterRequest:
+    properties:
+      email:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+    type: object
+  dto.User:
+    properties:
+      created_at:
+        type: string
+      email:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+    type: object
+info:
+  contact:
+    email: drus.galkin@mail.ru
+    name: Почта
+  description: Документация запросов микросервиса Auth, по всем вопросам @andrewandrew05.
+  title: OldMine Auth Api by AndrewGalkin
+  version: "1.0"
+paths:
+  /api/auth/login:
+    post:
+      consumes:
+      - application/json
+      description: Введите логин и пароль
+      parameters:
+      - description: Login credentials
+        in: body
+        name: credential
+        required: true
+        schema:
+          $ref: '#/definitions/dto.LoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.User'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Вход в аккаунт
+      tags:
+      - Auth
+  /api/auth/logout:
+    get:
+      consumes:
+      - application/json
+      description: Завершение сессии и удаление cookies
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      security:
+      - CookieAuth: []
+      summary: Выход из аккаунта
+      tags:
+      - Auth
+  /api/auth/profile:
+    get:
+      consumes:
+      - application/json
+      description: Для того чтобы получить данные пользователя, требуется авторизация
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.User'
+        "401":
+          description: Unauthorized
+          schema:
+            type: object
+      security:
+      - CookieAuth: []
+      summary: Профиль текущей сессии
+      tags:
+      - Auth
+  /api/auth/register:
+    post:
+      consumes:
+      - application/json
+      description: Введите данные для регистрации
+      parameters:
+      - description: Register credentials
+        in: body
+        name: credential
+        required: true
+        schema:
+          $ref: '#/definitions/dto.RegisterRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Регистрация
+      tags:
+      - Auth
+securityDefinitions:
+  CookieAuth:
+    description: Session authentication with cookie
+    in: cookie
+    name: session_id
+    type: apiKey
+swagger: "2.0"

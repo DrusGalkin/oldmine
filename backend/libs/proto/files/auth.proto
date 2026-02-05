@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option go_package= "../generate";
+
+service Auth {
+  rpc CheckAuth (AuthRequest) returns (AuthResponse);
+  rpc IsAdmin (IsAdminRequest) returns (IsAdminResponse);
+  rpc PaymentVerification (PaymentVerificationRequest) returns (PaymentVerificationResponse);
+}
+
+message AuthRequest {
+  string sess_id = 1;
+}
+
+message AuthResponse {
+  int64 id = 1;
+  string name = 2;
+  string email = 3;
+  bool auth = 4;
+}
+
+message IsAdminRequest {
+  int64 id = 1;
+}
+
+message IsAdminResponse {
+  bool isAdmin = 1;
+}
+
+message PaymentVerificationRequest {
+  int64 id = 1;
+}
+
+message PaymentVerificationResponse {
+  bool pay = 1;
+}

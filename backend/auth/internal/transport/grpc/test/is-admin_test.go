@@ -1,0 +1,80 @@
+package test
+
+import (
+	mock2 "auth/internal/mock"
+	"auth/internal/repository"
+	grpc2 "auth/internal/transport/grpc"
+	"context"
+	"fmt"
+	"github.com/DATA-DOG/go-sqlmock"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"go.uber.org/zap"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials/insecure"
+	"libs/proto/generate"
+	"testing"
+	"time"
+)
+
+func TestIsAdmin_Client(t *testing.T) {
+	log, _ := zap.NewDevelopment()
+	var uid int64 = 1
+
+	db, mock, err := sqlmock.New()
+	require.NoError(t, err)
+	defer db.Close()
+
+	repo := repository.New(db, log, 2*time.Second)
+
+	rows := sqlmock.NewRows([]string{"user_id"}).AddRow(1)
+	mock.
+		ExpectQuery(
+			`select user_id from admins where user_id = \$1`,
+		).
+		WithArgs(uid).
+		WillReturnRows(rows)
+
+	host, port := "localhost", "50051"
+
+	resCh := make(chan bool, 1)
+	errCh := make(chan error, 1)
+
+	server := grpc2.New(new(mock2.Redis), repo, host, port)
+
+	go func() {
+		defer func() {
+			if err := recover(); err != nil {
+				errCh <- err.(error)
+			}
+		}()
+		server.Run()
+	}()
+
+	time.Sleep(1 * time.Second)
+
+	go func() {
+		conn, err := grpc.NewClient(
+			fmt.Sprintf("%s:%s", host, port),
+			grpc.WithTransportCredentials(insecure.NewCredentials()),
+		)
+		client := generate.NewAuthClient(conn)
+		defer conn.Close()
+
+		res, err := client.IsAdmin(context.Background(), &generate.IsAdminRequest{Id: uid})
+		if err != nil {
+			errCh <- err
+		}
+		resCh <- res.IsAdmin
+	}()
+
+	select {
+	case err := <-errCh:
+		t.Fatal(err)
+	case res := <-resCh:
+		assert.Equal(t, res, true)
+	default:
+		server.Stop()
+
+	}
+}

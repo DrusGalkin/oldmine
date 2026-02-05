@@ -1,0 +1,39 @@
+package repository
+
+import (
+	"auth/internal/dto"
+	"auth/internal/models"
+	"context"
+	"database/sql"
+	"go.uber.org/zap"
+	"time"
+)
+
+type Repository interface {
+	Create(user models.User) error
+	GetUser(email, password string) (dto.User, error)
+	IsAdmin(ctx context.Context, reqID int64) (bool, error)
+	PaymentVerification(ctx context.Context, reqID int64) (bool, error)
+}
+
+type AuthRepository struct {
+	db  *sql.DB
+	log *zap.Logger
+	ttl time.Duration
+}
+
+func New(db *sql.DB, log *zap.Logger, ttl time.Duration) Repository {
+	if ttl == 0 {
+		ttl = 10 * time.Second
+	}
+
+	return AuthRepository{
+		db:  db,
+		log: log,
+		ttl: ttl,
+	}
+}
+
+func (r AuthRepository) getContext() (context.Context, context.CancelFunc) {
+	return context.WithTimeout(context.Background(), r.ttl)
+}

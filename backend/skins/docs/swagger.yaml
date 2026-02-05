@@ -1,0 +1,160 @@
+definitions:
+  dto.ErrorResponse:
+    properties:
+      error:
+        type: string
+    type: object
+info:
+  contact:
+    email: drus.galkin@mail.ru
+    name: Почта
+  description: Документация запросов микросервиса Skin, по всем вопросам @andrewandrew05.
+    Почти для всех запросов требуется авторизация.
+  title: OldMine Skin Api by AndrewGalkin
+  version: "1.0"
+paths:
+  /api/skins/:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Загрузка PNG файла скина
+      parameters:
+      - description: PNG файл скина
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      security:
+      - CookieAuth: []
+      summary: Загрузка скина
+      tags:
+      - Skins
+    put:
+      consumes:
+      - multipart/form-data
+      description: Загрузка PNG файла скина
+      parameters:
+      - description: PNG файл скина
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "202":
+          description: Accepted
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      security:
+      - CookieAuth: []
+      summary: Обновление скина
+      tags:
+      - Skins
+  /api/skins/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Удаление скина пользователя
+      parameters:
+      - description: ID пользователя
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "204":
+          description: No Content
+          schema:
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "403":
+          description: Forbidden
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      security:
+      - CookieAuth: []
+      summary: Удаление скина
+      tags:
+      - Skins
+    get:
+      consumes:
+      - application/json
+      description: ID пользователя = путь к файлу
+      parameters:
+      - description: ID скина
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      security:
+      - CookieAuth: []
+      summary: Получить ссылку на путь к скину
+      tags:
+      - Skins
+securityDefinitions:
+  CookieAuth:
+    description: Session authentication with cookie
+    in: cookie
+    name: session_id
+    type: apiKey
+swagger: "2.0"
