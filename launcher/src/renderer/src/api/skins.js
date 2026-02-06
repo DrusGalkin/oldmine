@@ -2,7 +2,7 @@ import axios from 'axios'
 import error from 'eslint-plugin-react/lib/util/error'
 
 const BASE_URL = 'http://localhost:4000/api'
-export const FORM_FILE_NAME = "skin"
+export const SKIN_FORM_FILE_NAME = "skin"
 export const skins = axios.create({
   baseURL: BASE_URL + '/skins',
   withCredentials: true

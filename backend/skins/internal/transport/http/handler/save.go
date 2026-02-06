@@ -3,6 +3,8 @@ package handler
 import (
 	"fmt"
 	"github.com/gofiber/fiber/v3"
+	"github.com/oliamb/cutter"
+	"image/png"
 	"os"
 	"path/filepath"
 )
@@ -24,13 +26,61 @@ func (h *SkinHandler) Save(ctx fiber.Ctx) error {
 	formFile, err := ctx.FormFile(FORM_FILE_NAME)
 	if err != nil {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{
-			"error": err,
+			"error": err.Error(),
 		})
 	}
 
 	if filepath.Ext(formFile.Filename) != ".png" {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{
 			"message": "Разрешенный формат только png",
+		})
+	}
+
+	tmpFile, err := os.CreateTemp("", "upload_skin_*.png")
+	if err != nil {
+		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Не удалось создать временный файл",
+		})
+	}
+	defer tmpFile.Close()
+	defer os.Remove(tmpFile.Name())
+
+	if err := ctx.SaveFile(formFile, tmpFile.Name()); err != nil {
+		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Не удалось сохранить загруженный файл",
+		})
+	}
+
+	file, err := os.Open(tmpFile.Name())
+	if err != nil {
+		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Не удалось открыть файл изображения",
+		})
+	}
+	defer file.Close()
+
+	img, err := png.Decode(file)
+	if err != nil {
+		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"message": "Некорректный PNG файл",
+		})
+	}
+
+	bounds := img.Bounds()
+	if bounds.Dx() > 64 || bounds.Dy() > 64 {
+		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+			"message": "Изображение должно быть размером 64x64 или 64х32 пикселей",
+		})
+	}
+
+	croppedImg, err := cutter.Crop(img, cutter.Config{
+		Width:  64,
+		Height: 32,
+		Mode:   cutter.TopLeft,
+	})
+	if err != nil {
+		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Не удалось обрезать изображение",
 		})
 	}
 
@@ -59,9 +109,19 @@ func (h *SkinHandler) Save(ctx fiber.Ctx) error {
 		}
 	}
 
-	if err := ctx.SaveFile(formFile, filePath); err != nil {
+	outputFile, err := os.Create(filePath)
+	if err != nil {
 		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
-			"error": err,
+			"error": "Не удалось создать файл для сохранения",
+		})
+	}
+
+	defer outputFile.Close()
+
+	if err := png.Encode(outputFile, croppedImg); err != nil {
+		os.Remove(filePath)
+		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Не удалось сохранить обрезанное изображение",
 		})
 	}
 

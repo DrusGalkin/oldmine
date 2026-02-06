@@ -1,0 +1,108 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 18.02.13 11:11
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: auy
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at cpw.mods.fml.common.ModClassLoader.loadBaseModClass(ModClassLoader.java:87)
+	at cpw.mods.fml.common.modloader.ModLoaderModContainer.constructMod(ModLoaderModContainer.java:489)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:69)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:45)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:317)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:300)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:268)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:153)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventHandler.handleEvent(EventHandler.java:69)
+	at com.google.common.eventbus.SynchronizedEventHandler.handleEvent(SynchronizedEventHandler.java:45)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:317)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:300)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:268)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:86)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:494)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:86)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:351)
+	at ho.c(DedicatedServer.java:86)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:724)
+	at fy.run(ThreadMinecraftServer.java:16)
+Caused by: java.lang.ClassNotFoundException: auy
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:218)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 30 more
+Caused by: java.lang.RuntimeException: Attempted to load class auy for invalid side SERVER
+	at cpw.mods.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:38)
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.runTransformers(RelaunchClassLoader.java:261)
+	at cpw.mods.fml.relauncher.RelaunchClassLoader.findClass(RelaunchClassLoader.java:206)
+	... 32 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.4.7
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_10, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 58516816 bytes (55 MB) / 227737600 bytes (217 MB) up to 954466304 bytes (910 MB)
+	JVM Flags: 1 total; -Xmx1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Suspicious classes: FML and Forge are installed
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	CraftBukkit Information: 
+   Running: 
+   Failed to handle CraftCrashReport:
+java.lang.NullPointerException
+	at org.bukkit.Bukkit.getName(Bukkit.java:68)
+	at org.bukkit.craftbukkit.v1_4_R1.CraftCrashReport.call(CraftCrashReport.java:19)
+	at l.a(CrashReportCategory.java:103)
+	at a.h(CrashReport.java:59)
+	at a.<init>(CrashReport.java:41)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:772)
+	at fy.run(ThreadMinecraftServer.java:16)
+
+	FML: MCP v7.26a FML v4.7.32.553 Minecraft Forge 6.6.1.524 29 mods loaded, 29 mods active
+	mcp [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed
+	FML [Forge Mod Loader] (coremods) Unloaded->Constructed
+	Forge [Minecraft Forge] (coremods) Unloaded->Constructed
+	CodeChickenCore [CodeChicken Core] (coremods) Unloaded->Constructed
+	NotEnoughItems [Not Enough Items] (coremods) Unloaded->Constructed
+	denLib [denLib] (denLib-2.1.4.jar) Unloaded->Constructed
+	IC2 [IndustrialCraft 2] (industrialcraft-2_1.115.218-lf.jar) Unloaded->Constructed
+	AdvancedMachines [IC2 Advanced Machines Addon] (AdvancedMachines_1.4.6.zip) Unloaded->Constructed
+	AdvancedSolarPanel [Advanced Solar Panels] (AdvancedSolarPanels_3_3_2.zip) Unloaded->Constructed
+	BuildCraft|Core [BuildCraft] (buildcraft-A-3.4.3.jar) Unloaded->Constructed
+	BuildCraft|Builders [BC Builders] (buildcraft-A-3.4.3.jar) Unloaded->Constructed
+	BuildCraft|Energy [BC Energy] (buildcraft-A-3.4.3.jar) Unloaded->Constructed
+	BuildCraft|Factory [BC Factory] (buildcraft-A-3.4.3.jar) Unloaded->Constructed
+	BuildCraft|Transport [BC Transport] (buildcraft-A-3.4.3.jar) Unloaded->Constructed
+	BuildCraft|Silicon [BC Silicon] (buildcraft-A-3.4.3.jar) Unloaded->Constructed
+	ChickenChunks [ChickenChunks] (ChickenChunks1.2.1.1.jar) Unloaded->Constructed
+	Forestry [Forestry for Minecraft] (forestry-A-2.0.0.10.jar) Unloaded->Constructed
+	IronChest [Iron Chest] (ironchest-universal-1.4.7-4.5.2.213.zip) Unloaded->Constructed
+	mod_FurnitureMod [mod_FurnitureMod] (MrCrayfishFurnitureMod-1.4.5.zip) Unloaded
+	Railcraft [Railcraft] (Railcraft_1.4.7-6.15.3.0.jar) Unloaded
+	RedPowerCore [RedPower] (RedPowerCore-2.0pr6.zip) Unloaded
+	RedPowerBase [RP Base] (RedPowerCore-2.0pr6.zip) Unloaded
+	RedPowerMachine [RP Machine] (RedPowerMechanical-2.0pr6.zip) Unloaded
+	RedPowerCompat [RP Compat] (RedPowerCompat-2.0pr6.zip) Unloaded
+	RedPowerWiring [RP Wiring] (RedPowerDigital-2.0pr6.zip) Unloaded
+	RedPowerLogic [RP Logic] (RedPowerDigital-2.0pr6.zip) Unloaded
+	RedPowerLighting [RP Lighting] (RedPowerDigital-2.0pr6.zip) Unloaded
+	RedPowerWorld [RP World] (RedPowerMechanical-2.0pr6.zip) Unloaded
+	RedPowerControl [RP Control] (RedPowerMechanical-2.0pr6.zip) Unloaded
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'mcpc,craftbukkit,forge,fml'
+	Type: Dedicated Server (map_server.txt)

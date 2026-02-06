@@ -9,6 +9,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/lib/pq v1.10.9
 	github.com/numbergroup/cleanenv v1.7.2
+	github.com/oliamb/cutter v0.2.2
 	github.com/swaggo/swag v1.16.6
 	go.uber.org/zap v1.27.1
 	google.golang.org/grpc v1.78.0

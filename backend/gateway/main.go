@@ -13,11 +13,15 @@ const (
 
 	AUTH_PROD = "http://auth:8123"
 	AUTH_DEV  = "http://localhost:8123"
+
+	CLOAKS_PROD = "http://cloaks:8121"
+	CLOAKS_DEV  = "http://localhost:8121"
 )
 
 func main() {
 	authURL := AUTH_DEV
 	skinsURL := SKINS_DEV
+	cloaksURL := CLOAKS_DEV
 
 	app := fiber.New()
 
@@ -71,11 +75,6 @@ func main() {
 		return nil
 	})
 
-	app.Get("/MinecraftSkins/*", func(c fiber.Ctx) error {
-		path := c.Params("*")
-		return proxy.Do(c, skinsURL+"/uploads"+"/"+path)
-	})
-
 	app.All("/api/skins/*", func(c fiber.Ctx) error {
 		path := c.Params("*")
 
@@ -86,6 +85,31 @@ func main() {
 		c.Set("Access-Control-Allow-Credentials", "true")
 
 		return nil
+	})
+
+	app.All("/api/cloaks/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+
+		targetURL := cloaksURL + "/" + path
+		proxy.Do(c, targetURL)
+
+		c.Set("Access-Control-Allow-Origin", "http://localhost:5173")
+		c.Set("Access-Control-Allow-Credentials", "true")
+
+		return nil
+	})
+	// **************************************************************
+
+	// Роуты для системы скинов
+	// **************************************************************
+	app.Get("/MinecraftSkins/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+		return proxy.Do(c, skinsURL+"/uploads"+"/"+path)
+	})
+
+	app.Get("/MinecraftCloaks/*", func(c fiber.Ctx) error {
+		path := c.Params("*")
+		return proxy.Do(c, cloaksURL+"/uploads"+"/"+path)
 	})
 	// **************************************************************
 

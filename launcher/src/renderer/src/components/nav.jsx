@@ -71,7 +71,9 @@ export const Icon = ({ width, onClick }) => {
       onClick={onClick}
       className={`w-[${width}px] transition-all hover:scale-102 cursor-pointer hover:text-red-500 text-center p-2 shadow-black border-2 border-gray-800 text-white font-[Minecraft] bg-gray-500`}>
 
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+           stroke-linejoin="round">
         <path d="M3 6h18"/>
         <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
         <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
@@ -80,4 +82,27 @@ export const Icon = ({ width, onClick }) => {
       </svg>
     </button>
   )
+}
+export const Setting = ({ width, onClick }) => {
+    const [isActive, setIsActive] = useState(false)
+
+    const onClickHandler = () => {
+        onClick()
+        setIsActive(!isActive)
+    }
+
+    return (
+        <button
+            onClick={onClickHandler}
+            className={`w-[${width}px] transition-all hover:scale-102 cursor-pointer text-center p-2 shadow-black border-2 border-gray-800 font-[Minecraft] bg-gray-500 group`}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 className={isActive ? `text-yellow-300 group-hover:text-yellow-300 transition-colors` : `text-white group-hover:text-yellow-300 transition-colors`}>
+                <path d="M6 4L12 2L18 4V14C18 16 16 18 12 18C8 18 6 16 6 14V4Z" />
+                <path d="M6 8L12 10L18 8" />
+                <path d="M6 12L12 14L18 12" />
+            </svg>
+        </button>
+    )
 }
