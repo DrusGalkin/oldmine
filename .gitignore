@@ -4,5 +4,4 @@ tmp
 node_modules
 dist-electron
 .vscode
-launcher
 

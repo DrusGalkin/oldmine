@@ -1,12 +1,12 @@
 import {useEffect, useRef, useState} from 'react'
 import {profile} from '../api/auth'
 import Loader from './loader'
-import {deleteSkin, SKIN_FORM_FILE_NAME, getSkin, getSkinPath, putSkin, saveSkin} from '../api/skins'
+import {deleteSkin, SKIN_FORM_FILE_NAME, getSkin, getSkinPath, saveSkin} from '../api/skins'
 import skin from '../assets/images/default.png'
 import {ReactSkinview3d} from 'react-skinview3d'
 import {Button, Icon, Setting} from './nav'
 import {ERROR, SUCCESS} from './message'
-import {CLOAK_FORM_FILE_NAME, deleteCloak, getCloak, saveCloak} from "../api/cloaks";
+import {CLOAK_FORM_FILE_NAME, deleteCloak, getCloak, saveCloak} from "../api/user-cloak";
 
 export default function Profile({showMessage}) {
     const fileInputRef = useRef(null)
