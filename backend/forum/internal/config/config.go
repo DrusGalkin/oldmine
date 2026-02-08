@@ -17,6 +17,7 @@ type Config struct {
 type HTTPConfig struct {
 	Port            string        `yaml:"port"`
 	Timeout         time.Duration `yaml:"timeout"`
+	AbsoluteSessTTl time.Duration `yaml:"absolute_sess_ttl"`
 	ShutdownTimeout time.Duration `yaml:"shutdown_timeout"`
 }
 
