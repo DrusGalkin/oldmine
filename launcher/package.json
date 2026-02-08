@@ -6,10 +6,6 @@
   "author": "example.com",
   "homepage": "https://electron-vite.org",
   "scripts": {
-    "format": "prettier --write ../../../AppData/Local/Temp/Rar$DRa11036.32035.rartemp/oldmine-launcher",
-    "lint": "eslint --cache ../../../AppData/Local/Temp/Rar$DRa11036.32035.rartemp/oldmine-launcher",
-    "format": "prettier --write .",
-    "lint": "eslint --cache .",
     "start": "electron-vite preview",
     "dev": "electron-vite dev",
     "build": "electron-vite build",
