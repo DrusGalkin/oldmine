@@ -5,7 +5,7 @@ import Profile from './profile'
 import { ERROR, SUCCESS } from './message'
 
 export default function Login({ showMessage }) {
-  const [data, setData] = useState({ email: 'andrew.galkin2018@gmail.com', password: 'andrew.galkin2018@gmail.com' })
+  const [data, setData] = useState({ email: 'andrew.galkin201d8@gmail.com', password: 'andrew.galkin201d8@gmail.com' })
   const [loading, setLoading] = useState(false)
   const [auth, setAuth] = useState("")
   const inputStyle =

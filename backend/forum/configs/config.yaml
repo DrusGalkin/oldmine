@@ -1,0 +1,8 @@
+http:
+  port: 8120
+  timeout: 3m
+  shutdown_timeout: 10s
+grpc:
+  host: "localhost"
+  port: 50051
+  timeout: 30s

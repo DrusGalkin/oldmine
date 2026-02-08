@@ -10,7 +10,7 @@ import (
 func main() {
 	db := database.PostgresInit()
 
-	switch os.Getenv("state") {
+	switch os.Getenv("STATE") {
 	case "up":
 		app.Up(db)
 	case "down":

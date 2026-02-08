@@ -51,6 +51,19 @@ services:
 #      - go-modules:/go/pkg/mod
 #    command: ["air", "-c", ".air.toml"]
 
+  migrator:
+    build:
+      context: /backend/migrator
+      dockerfile: Dockerfile
+    environment:
+      STATE: "up"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      internal:
+
+
   postgres:
     image: postgres:alpine
     ports:

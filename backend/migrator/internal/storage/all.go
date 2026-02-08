@@ -68,7 +68,7 @@ func setMigration(version string, codes ...SQL) *models.Migration {
 	var correctedCodes []SQL
 
 	if len(codes) >= 2 {
-		if !strings.Contains(strings.ToLower(codes[2]), "drop") {
+		if !strings.Contains(strings.ToLower(codes[1]), "drop") {
 			for i, c := range codes {
 				if strings.Contains(strings.ToLower(c), "drop") {
 					tmp := codes[0:i]
