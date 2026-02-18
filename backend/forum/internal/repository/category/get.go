@@ -2,12 +2,12 @@ package category
 
 import (
 	"context"
-	"forum/internal/domain/model"
+	"forum/internal/domain/models"
 	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
 )
 
-func (r *CRepository) Get(ctx context.Context, id int) (model.Category, error) {
+func (r *CRepository) Get(ctx context.Context, id int) (models.Category, error) {
 	const op = "repository.category.get"
 	log := r.log.With(zap.String("op", op))
 
@@ -20,13 +20,13 @@ func (r *CRepository) Get(ctx context.Context, id int) (model.Category, error) {
 			id,
 		)
 
-	var category model.Category
+	var category models.Category
 	if err := row.
 		Scan(
 			&category.ID,
 			&category.Title,
 		); err != nil {
-		return model.Category{}, libs.QueryError(log, op, err)
+		return models.Category{}, libs.QueryError(log, op, err)
 	}
 
 	return category, nil

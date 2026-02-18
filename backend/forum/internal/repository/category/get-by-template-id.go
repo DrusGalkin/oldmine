@@ -4,12 +4,12 @@ import (
 	"context"
 	"database/sql"
 	"errors"
-	"forum/internal/domain/model"
+	"forum/internal/domain/models"
 	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
 )
 
-func (r *CRepository) GetByTemplateId(ctx context.Context, templateId int) ([]model.Category, error) {
+func (r *CRepository) GetByTemplateId(ctx context.Context, templateId int) ([]models.Category, error) {
 	const op = "repository.category.get-by-template-id"
 	log := r.log.With(zap.String("op", op))
 
@@ -29,9 +29,9 @@ func (r *CRepository) GetByTemplateId(ctx context.Context, templateId int) ([]mo
 	}
 	defer rows.Close()
 
-	var categorys []model.Category
+	var categorys []models.Category
 	for rows.Next() {
-		var category model.Category
+		var category models.Category
 		if err := rows.
 			Scan(
 				&category.ID,

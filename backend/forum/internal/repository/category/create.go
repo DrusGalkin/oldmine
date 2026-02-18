@@ -3,12 +3,12 @@ package category
 import (
 	"context"
 	"errors"
-	"forum/internal/domain/model"
+	"forum/internal/domain/models"
 	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
 )
 
-func (r *CRepository) Create(ctx context.Context, category model.Category) error {
+func (r *CRepository) Create(ctx context.Context, category models.Category) error {
 	const op = "repository.category.create"
 	log := r.log.With(zap.String("op", op))
 

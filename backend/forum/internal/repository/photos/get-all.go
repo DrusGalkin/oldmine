@@ -4,12 +4,12 @@ import (
 	"context"
 	"database/sql"
 	"errors"
-	"forum/internal/domain/model"
+	"forum/internal/domain/models"
 	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
 )
 
-func (r *PRepository) GetAll(ctx context.Context) ([]model.Photo, error) {
+func (r *PRepository) GetAll(ctx context.Context) ([]models.Photo, error) {
 	const op = "repository.photos.get-all"
 	log := r.log.With(zap.String("op", op))
 
@@ -21,9 +21,9 @@ func (r *PRepository) GetAll(ctx context.Context) ([]model.Photo, error) {
 	}
 	defer rows.Close()
 
-	var photos []model.Photo
+	var photos []models.Photo
 	for rows.Next() {
-		var photo model.Photo
+		var photo models.Photo
 		if err := rows.Scan(
 			&photo.ID,
 			&photo.Url,

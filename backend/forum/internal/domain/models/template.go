@@ -1,4 +1,4 @@
-package model
+package models
 
 type Template struct {
 	ID     int     `json:"id"`

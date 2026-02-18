@@ -4,12 +4,12 @@ import (
 	"context"
 	"database/sql"
 	"errors"
-	"forum/internal/domain/model"
+	"forum/internal/domain/models"
 	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
 )
 
-func (r *CRepository) GetAll(ctx context.Context) ([]model.Category, error) {
+func (r *CRepository) GetAll(ctx context.Context) ([]models.Category, error) {
 	const op = "repository.category.get-all"
 	log := r.log.With(zap.String("op", op))
 
@@ -24,9 +24,9 @@ func (r *CRepository) GetAll(ctx context.Context) ([]model.Category, error) {
 	}
 	defer rows.Close()
 
-	var categorys []model.Category
+	var categorys []models.Category
 	for rows.Next() {
-		var category model.Category
+		var category models.Category
 		if err := rows.
 			Scan(
 				&category.ID,

@@ -1,4 +1,4 @@
-package model
+package models
 
 type Photo struct {
 	ID     int    `json:"id"`

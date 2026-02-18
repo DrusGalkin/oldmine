@@ -3,12 +3,12 @@ package photos
 import (
 	"context"
 	"errors"
-	"forum/internal/domain/model"
+	"forum/internal/domain/models"
 	"github.com/DrusGalkin/libs"
 	"go.uber.org/zap"
 )
 
-func (r *PRepository) Update(ctx context.Context, id int, photo model.Photo) error {
+func (r *PRepository) Update(ctx context.Context, id int, photo models.Photo) error {
 	const op = "repository.photos.update"
 	log := r.log.With(zap.String("op", op))
 
